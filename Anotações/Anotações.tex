@@ -1,0 +1,72 @@
+\documentclass[a4paper, 12pt]{article}
+
+\usepackage[portuges]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{indentfirst}
+\usepackage{graphicx}
+\setlength{\jot}{8pt}
+\usepackage[colorinlistoftodos]{todonotes}
+
+
+\begin{document}
+
+\begin{titlepage}
+	\begin{center}
+		\huge{Anotações sobre a Iniciação Científica}
+
+		\vspace{30pt}
+		
+	\end{center}
+	
+	\begin{flushleft}
+		%\begin{tabbing}
+		%	Alunos\qquad\qquad\= \>Heitor Barroso Cavalcante - 12566101\\\\
+		%	Professora\> Nina S. T. Hirata \\
+		%
+	    %\end{tabbing}
+		Aluno\qquad\qquad Heitor Barroso Cavalcante - 12566101\\
+		\vspace{10pt}
+		Professora \quad Nina S. T. Hirata \\
+		  
+	\end{flushleft}
+	\vspace{30pt}
+	\begin{center}
+		21 de Abril de 2022
+	\end{center}
+	\tableofcontents
+\end{titlepage}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%\\
+\thispagestyle{empty}
+
+\newpage
+\pagenumbering{arabic}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Processamento de Imagens Digitais}
+\subsection{Introdução}
+O processamento de imagens é uma subárea da disciplina de ``Processamento de Sinais", e essa subárea pode ser dividida em processamento digital ou analógico de imagens.
+\begin{itemize}
+    \item Processamento Analógico de Imagens:\\
+    As imagens são manipuladas através da variação de sinais elétricos, o maior exemplo deste tipo de processamento é a imagem de televisão.
+    \item Processamento Digital de Imagens:\\
+    Consiste em desenvolver sistemas digitais para manipular imagens.
+\end{itemize}
+
+Nesse sentido, imagens podem ser compreendidas como um sinal bidimensional e pode ser definida como uma função \(f(x,y)\) tal que \((x,y)\) são as coordenadas de um pixel e \(f(x,y\) é o valor deste pixel. Assim, figuras visualizadas em um computador, por exemplo são matrizes de inteiros que variam de 0 a 255. As dimensões da imagem são as dimensões da matriz.
+\\
+
+Um sinal, pode ser definido como qualquer quantidade física medida através do tempo, do espaço ou qualquer outra dimensão. Logo, uma imagem digital pode ser caracterizada como um sinal de duas dimensões.
+\\
+
+A formação de uma imagem digital parte de um processo físico. A luz refletida pelos objetos fotografados é medida por diversos sensores e uma tensão contínua é gerada de acordo com a quantidade de luz captada pelos sensores. Agora, esse sinal analógico deve ser convertido para um digital. Para isso, amostragem e quantização são utilizadas para gerar a matriz de números que forma a imagem digital.
+\\
+
+Visão Computacional consiste no desenvolvimento de um sistema que consiga, a partir de uma imagem, gerar uma saída contendo informações sobre a imagem. Por exemplo, sistemas com reconhecimento facial.
+\\
+
+Por fim, resumindo, o processamento de sinais é muito importante para
+o processamento de imagens. Sensores captam a luz do mundo físico, resultando em um sinal bidimensional que, após ser processado, forma uma imagem digital. Aí então esta imagem é manipulada através do processamento digital de imagens.
+
+\end{document}
