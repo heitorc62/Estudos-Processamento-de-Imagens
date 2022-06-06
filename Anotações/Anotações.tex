@@ -2,6 +2,8 @@
 
 \usepackage[portuges]{babel}
 \usepackage[utf8]{inputenc}
+\usepackage[outline]{contour}
+\usepackage[dvipsnames]{xcolor}
 \usepackage{amsmath}
 \usepackage{indentfirst}
 \usepackage{graphicx}
@@ -68,5 +70,314 @@ Visão Computacional consiste no desenvolvimento de um sistema que consiga, a pa
 
 Por fim, resumindo, o processamento de sinais é muito importante para
 o processamento de imagens. Sensores captam a luz do mundo físico, resultando em um sinal bidimensional que, após ser processado, forma uma imagem digital. Aí então esta imagem é manipulada através do processamento digital de imagens.
+
+\subsection{Introdução à Sinais e Sistemas}
+Primeiramente, definindo os termos chaves dessa seção:
+\subsubsection{Sinais}
+Em Engneharia elétrica, a medida fundamental para representação
+de informações é chamada sinal. Um sinal poderia ter quaisquer dimensões
+e ser de qualquer forma.
+\begin{itemize}
+	\item Sinais Analógicos:
+    \\
+	Um sinal analógico, medido através do tempo é um sinal contínuo.
+	Eles são difíceis de analizar. Para representá-los, precisariamos de memória infinita.
+	Isso ocorre pois a amostra é ``infinita''. Um exemplo é a voz humana ou $y = \sin(x)$.
+	\item Sinais Digitais:
+	\\
+	São a apropriação dos sinais analógicos de uma maneira descontínua, valores discretos
+	são utilizados para representar informações. Logicamente são menos precisos que sinais
+	analógicos.
+\end{itemize}
+\subsubsection{Sistemas}
+Um sistema é definido através dos tipos de sinais de entrada e dos tipos de sinais de saída
+em relação aos quais o sistema funciona. Nesse caso, um sistema pode ser interpretado como o processo
+de conversão de um sinal analógico para um sinal digital.
+\\
+
+Em tal tipo de conversão, há dois conceitos chave. Amostragem e Quantização.
+Amostragem pode ser definido como o ato de tirar amostras do sinal isso ocorre no domínio da função que representa o sinal analógico.
+Já Quantização pode ser definido como o ato de particionar os valores que a função pode assumir.
+
+
+\section{Aplicações do Processamento de Imagens Digitais}
+\begin{itemize}
+	\item Restauração de imagens.
+	\item Análise de imagens médicas.
+  	\item Sensoriamento remoto.
+   	\item Visão computacional.
+    \item Reconhecimento de padrões.
+    \item Processamento de vídeos.
+    \item Análise de imagens microscópicas.
+\end{itemize}
+
+\section{Dimensões das Imagens}
+Primeiramente, o conceito de dimensão define o número mínimo de pontos necessários para saber a posição de um objeto particular 
+no espaço. No caso das imagens, sabemos que são bidimensionais. Altura e Largura. No caso de vídeos, podemos considerar o tempo como
+ uma terceira dimensão e, por isso, podemos classificar esse tipo de imagens (vídeos) como 3D. Desso modo, podemos definir a imagem como
+ uma função de duas variaveis.
+ \begin{center}
+	$f(x,y) = Imagem$
+ \end{center}
+
+ É interessante ressaltar que um filme pode ser considerado 3D. E, portanto, na realidade, um filme 3D seria 4D.
+
+\section{Formação de Imagens em Câmeras}
+Primeiro, é bom comentar sobre a formação de imagens no olho humano. A luz é refletida pelos objetos e é captada pelos olhos. Ao entrar no olho
+a imagem fica invertida na retina. Então, o cérebro interpreta a imagem invertida e a ``desinverte''.
+\subsection{Formação de Imagens em Câmeras Analógicas}
+Nesse tipo de câmera, o filme --- uma tira plástica --- é revestida com halogeneto de prata. Essa substância reage com os fótons e forma
+o negativo das imagens fotografadas.
+\subsection{Formação de Imagens em Câmeras Digitais}
+Nesse tipo de câmera, a formação das imagens se dá através do uso de um vetor de sensores CCD. CCD significa Charged Couple Devices.
+Ou seja, dispositivo de carga acoplada, que é um sensor semicondutor que é sensível à imagem e a converte em um sinal elétrico. Há uma matriz
+retangular desses sensores, em que cada um dos sensores corresponde à um pixel da imagem formada. Depois de cada sensor na matriz armazenar uma carga
+a partir da incidência de fótons, tal carga é transformada em uma tensão que é convertida em informação digital. Isso ocorre em um sensor por vez.
+
+\section{Mecanismos das Câmeras}
+\subsection{Aperture - Abertura}
+Como o próprio nome diz, é um orifício que permite a passagem da luz para dentro da câmera. Há lâminas que regulam o tamanho da abertura 
+fazendo com que mais ou menos luz tenha acesso ao interior da câmera.
+O efeito da abertura da câmera corresponde ao brilho da imagem fotografada
+\subsection{Shutter - Obturador}
+Podemos pensar no obturador como uma espécie de cortina que fica depois da abertura da câmera. Por trás do obturador está a matriz de 
+dispositivos de carga acoplada. Assim que o obturador se abre a imagem é formada nessa matriz. Os efeitos do obturador dependem do tempo 
+que a ele permanece aberto. Quanto mais tempo mais claridade haverá na imagem. Nesse sentido, dois conceitos chaves sobre esse mecanismo 
+são o tempo e a velocidade. ``Shutter speed'' e ``Shutter time''. A velocidade representa quantas vezes o obturador se abriu ou se fechou, já o tempo 
+representa o intervalo de tempo em que ele permanece aberto. É interessante ressaltar que há uma relação inversamente proporcional 
+entre a velocidade e o tempo. Quanto mais velocidade, menor tempo e vice-versa. Uma aplicação importante da velocidade e do tempo do obturador é o ato de 
+capturar imagens que se movimentam em alta velocidade. Assim, quanto menor for o tempo do obturador, melhor conseguiremos capturar imagens que se movem rapidamente.
+
+\subsection{ISO}
+O fator ISO representa a sensibilidade de uma câmera à luz. Quanto maior o número ISO de uma câmera, mais sensível ela é à luz. 
+Contudo, há um sintoma colateral que se pronuncia quando o número ISO é elevado. Nesses casos, há mais ruído na imagem capturada.
+
+\subsection{Conceito de Pixel}
+O pixel é a unidade da imagem. Em uma imagem em gray-scale de 8 bits, cada pixel possui um valor de 0 a 255, que corresponde à intensidade 
+da luz naquele ponto. Novamente, cada dispositivo de carga acoplada corresponde à um pixel.
+\subsubsection{Cálculo do número total de pixels}
+Para saber a quantidade de pixels em uma imagem, basta multiplicar as dimensões da matriz
+\begin{center}
+	$\#pixels = \#colunas \cdot \#linhas$
+\end{center}
+\subsubsection{Valores de pixels}
+Sabemos que cada pixel possui somente um valor. Além disso, por definição, o valor $0$ significa ausência de luz.
+
+\section{Transformação de Perspectiva}
+De modo geral, um exemplo claro do que é perspectiva, é o fato de, através dos olhos humanos, ao vizualizar objetos menos distantes, 
+esses aparentam ser maiores. Nesse sentido, a transformação de perspectiva é sobre a conversão de uma realidade tridimensional 
+(altura, largura e profundidade) em um uma imagem bidimensional (altura e largura).
+
+\subsection{Referencial - Frame of Reference}
+\textcolor{red}{
+	\large{ACHEI ESSA PARTE CONFUSA}
+	\\
+	Para analisar o mundo/imagem/cena tridimensional, precisamos de 5 referenciais --- ``frame of references'' --- sendo esses:
+\begin{itemize}
+	\item Objeto
+	\item Mundo
+ 	\item Camera
+ 	\item Imagem
+ 	\item Pixel
+\end{itemize}
+}
+\newpage
+De qualquer maneira, essa transformação pode ser compreendida ao utilizarmos simpes conceitos de ótica e trigonometria. Observe:
+\begin{figure}[!htbp]
+	\includegraphics[scale=0.5]{images/otica.png}
+	\caption{Imagem para exemplificar o uso da trigonometria na conversão do mundo 3D para o 2D}
+\end{figure}
+Podemos usar semelhança de triângulos para descobrir o tamanho da imagem formada $i$.
+\begin{center}
+	$\dfrac{i}{d} = \dfrac{O}{D} \Rightarrow i = d \dfrac{O}{D}$
+\end{center}
+
+\section{Conceito de bits por pixel}
+O número de cores que podem ser representadas em uma imagem depende da quantidade de bits por pixel presente nessa imagem.
+De maneira geral, podemos dizer que a maioria das imagens em gray-scale consiste de 8 bits por pixel. Equanto as coloridas tem, geralemente 
+24 $bpp$. Isso pode ser compreendido ao imaginar que cada canal R, G, e B são possuem 8 bits.
+
+Como dito anteriormente, o valor 0 é, por padrão, o valor que representa a cor preta, intensidade mínima em um canal de cor. 
+Agora, o valor que representa o valor máximo não é padronizado, depende do $bbp$ dessa imagem. Então, teremos que esse valor pode ser 
+representado por $2^{bpp} - 1$.
+
+\subsection{Cálculo do tamanho (em memória) de uma imagem}
+Para saber o tamanho de uma imagem, devemos levar em consideração as suas dimensões bidimensionais e o número de $bpp$. Por exemplo, digamos que 
+uma imagem possua $1024$ linhas, $1024$ colunas e $8 bpp$, teremos:
+\begin{center}
+	$tamanho = 1024 \cdot 1024 \cdot 8 = 8388608 \; bits  \Rightarrow$ 
+	\\
+	\vspace*{0.15cm}
+	$\Rightarrow tamanho = \dfrac{8388608}{8} = 1048576 \; bytes  \Rightarrow$ 
+	\\
+	$\Rightarrow tamanho = \dfrac{1048576}{1024} = 1024\;kb \Rightarrow tamanho = \dfrac{1024}{1024}\;Mb $
+\end{center}
+
+\section{Tipos de imagens}
+\subsection{Imagem binária}
+Nesse caso, há somente 2 valores possíveis para os pixels dessa imagem 0 ou 1. Onde 0 representa o preto e 1 o branco.
+\begin{figure}[!htbp]
+	\centering
+	\includegraphics[scale=0.5]{images/binaria.png}
+	\caption{Imagem binária}
+\end{figure}
+\subsection{Formato 8 bits de cor}
+Comumente conhecida como imagens Grayscale.
+\begin{figure}[!htbp]
+	\centering
+	\includegraphics[scale=0.5]{images/grayscale.jpg}
+	\caption{Imagem Grayscale}
+\end{figure}
+
+\subsection{Formato 16 bits de cor}
+Aqui já temos imagens coloridas. Esses 16 bits são distribuídos nos 3 canais R, G e B. Da seguinte maneira:
+\begin{itemize}
+	\item 5 bits para o vermelho (R).
+ \item 6 bits para o azul (G).
+ \item 5 bits para o verde (B).
+\end{itemize}
+
+\subsection{Formato 24 bits de cor}
+Por fim, temos o formato de imagens mais comuns hoje em dia. Em que temos esses 24 bits distribuídos igualmente entre os canais R, G e B.
+\begin{figure}[!htbp]
+	\centering
+	\includegraphics[scale=0.4]{images/colorida.png}
+	\caption{Exemplo de imagem de 24 bits}
+\end{figure}
+
+\section{Códigos de cores}
+Consideramos aqui que todas as cores estão no formato de 24bits. ou seja, uma cor ``$C$'' é tal que $(R, G, B) = (C_R, C_G, C_B)$
+Assim, no formato RGB, temos:
+\begin{itemize}
+	\item \contour{black}{\textcolor{white}{Branco}} = (255, 255, 255)
+ \item Preto = (0, 0, 0)
+ \item \textcolor{red}{Vermelho} = (255, 0, 0)
+ \item \textcolor{green}{Verde} = (0, 255, 0)
+ \item \textcolor{blue}{Azul} = (0, 0, 255)
+ \item \textcolor{gray}{Cinza} = (128, 128, 128)
+		\\
+		Nesse caso, a cor cinza é sempre o ponto médio entre a intensidade máxima e mínima. Logo, poderíamos escolher o valor 
+		de 127 ou de 128. Nesse caso, escolhemos 128 (em todos os canais).
+\end{itemize}
+
+\subsection{Modelo CMYK}
+Agora, vale ressaltar o modelo de cores CMYK --- comum em impressoras ---, aqui, CMYK significa ``cyan, magenta, yellow, black''. No conceito de impressoras,
+geralmente há um cartucho de cores, (CMY) e outro preto. Assim, as cores ciano, magenta e amaerlo podem ser formadas ao se variar as porções de 
+vermelho, verde e azul também. Os códigos RGB dessas cores são como segue.
+
+\begin{itemize}
+ \item \textcolor{magenta}{Magenta} = (255, 0, 255)
+ \\
+ Combinação de vermelho e azul.
+ \item \textcolor{cyan}{Ciano} = (0, 255, 255)
+ \\
+ Combinação de verde e azul.
+ \item \textcolor{yellow}{Amarelo} = (255, 255, 0)
+ \\
+ Uma combinação de vermelho e verde.
+\end{itemize}
+
+Além disso, também há o formato hexadecimal para representação de cores. Logo, para converter de um formato para outro, de RGB para hexadecimal ou 
+vice versa, fazemos:
+
+\subsection{Conversão RGB para Hexadecimal}
+O formato de uma cor em hexadecimal é tal que \#FFFF00 (amarelo). para obter esses valores hexadecimais, deve-se, canal a canal RGB de uma dada cor, 
+realizar a divisão do valor do canal por 16. Então, o quociente da divisão do canal R é o primeiro caracter do código, o segundo caracter 
+é o resto dessa divisão. O terceiro valor é o quociente da divisão do valor do canal B por 16, o quarto é o resto dessa divisão. E assim por diante.
+Observe:
+\\
+Sabemos que o código do \textcolor{yellow}{amarelo} é (255, 255, 0). Então, sobre R: $255/16$ tem quciente 15 e resto 15. FF. O mesmo ocorre com G. 
+Agora, sobre B, teremos 00. Formando, assim o código \#FFFF00.
+
+\subsection{Conversão Hexadecimal para RGB}
+Para fazer o caminho inverso, devemos dividir o código hexadecimal em três porções. Sobre o exemplo do amarelo, temos FF, FF, 00. Agora, em um desses pares 
+por vez, convertemos cada um de seus caracteres para binário. Concatenamos os dois números binários obtidos, convertemos para decimal e, assim, obtemos os valores dos canais. Observe: 
+\\
+Primeiramente, tratando de FF. convertendo para binário, temos 1111 e 1111. Concatenando: 11111111. Convertendo para decimal: 255 (valor do canal R)
+Repetindo esses passos para os outros dois canais, obtemos o código da cor em (R, G, B).
+
+\section{Conversão de RGB para Grayscale}
+Primeiramente a maneira mais simples de se converter uma imagem para Grayscale é fazer a média entre os valores dos canais R, G e B.
+\begin{figure}[!htb]
+	\centering
+	\minipage{0.30\textwidth}
+	  \includegraphics[width=\linewidth]{images/rgb.jpg}
+	  \caption{Imagem original.}
+	\endminipage\hspace{1cm}
+	\minipage{0.30\textwidth}
+	  \includegraphics[width=\linewidth]{images/avg_gray.jpg}
+	  \caption{Imagem Grayscale feita com a média}
+	\endminipage
+\end{figure}
+Observe que essa figura não fica com um aspecto muito bom, fica ``empretecida''. Isso ocorre pois o olho humano não capta os níveis 
+de vermelho, verde e azul na mesma proporção. Na realidade, o olho humano é muito mais sensível ao verde. Então, há o método de utilizar pesos para 
+corrigir essas imperfeições. Então, se usarmos $30\%$ para o vermelho, $59\%$ para o verde e $11\%$ para o azul, teremos:
+
+\begin{figure}[!htb]
+	\centering
+	\minipage{0.30\textwidth}
+	  \includegraphics[width=\linewidth]{images/rgb.jpg}
+	  \caption{Imagem original.}
+	\endminipage\hspace{1cm}
+	\minipage{0.30\textwidth}
+	  \includegraphics[width=\linewidth]{images/weighted_gray.jpg}
+	  \caption{Imagem Grayscale feita utilizando pesos}
+	\endminipage
+\end{figure}
+
+
+\section{Amostragem - Sampling}
+
+Como dito anteriormente, o conceito de amostragem se relaciona ao processo de conversão de um sinal analógico para o digital. Assim, 
+tiramos amostras do domínio da função que queremos converter. Logo, podemos correlacionar esse conceito com os pixels da imagem que será formada.
+Imagine que queremos formar uma imagem de dimensões $5 \times 5$. Então, teremos que fazer uma amostragem da altura e largura do mundo que queremos representar 
+em 5 valores diferentes cada. Ou seja, se a imagem é $f(x, y)$, $x$ assumirá 5 valores e $y$ assumirá 5 valores também. De maneira análoga, podemos 
+relacionar esse conceito à matriz de dispositivos de carga acoplada ``CCDs''.
+
+\subsection{Diferenças entre Zoom Analógico e Digital}
+Apesar de ambos os conceitos se relacionarem ao fato de aumentarmos a amostragem do sinal, o zoom analógico aumenta essa amostragem através do movimento das lentes 
+da câmera. Já o zoom digital funciona como se a imagem já houvesse sido capturada. Zoom analógico é feito nos sinais e o digital em uma imagem digital.
+
+\section{Resolução de pixels}
+De maneira simples, a resolução de uma imagem pode ser definida como a resolução a partir da qauntidade de pixels em uma imagem. Quando sabemos que a resolução de 
+uma imagem é tal que $m \times n$ isso quer dizer que há $m$ colunas de pixel (largura) e $n$ linhas de pixel (altura). Nesse sentido, podemos calcular os 
+MegaPixels de uma imagem fazendo $\dfrac{m \cdot n}{1\; mi}$ além disso, podemos saber o tamanho da imagem a partir de sua resolução também: 
+$tamanho = pixelResolution \cdot bpp$ 
+
+\subsection{Proporção da Tela}
+Essa proporção nada mais é que a razão entre a largura da imagem e sua altura. Isso é extremamente útil ao mudar o tamnho das imagens, pois, 
+se manetermos essa razão, então a imagem com tamanho modificado terá o mesmo aspecto que a imagem original.
+
+\section{Mais sobre Zoom}
+Como introduzimos os conceitos de zoom digital e analógico, podemos compará-los melhor. De fato, como o zoom analógico, ou óptico, nos proporciona 
+um resultado melhor que o zoom digital. Isso ocorre pois, de fato estamos mudando a maneira como a fotografia será tirada, através do movimento das lentes.
+Agora, o zoom digital, é simplesmente, aumentar uma certa área de vizualização de uma imagem, fazendo os pixels ficarem ``maiores''. Por isso, a qualidade da 
+imagem é comprometida. Para fazer isso, há alguns métodos possíveis. ``Nearest neighbor interpolation'', ``Zero oeder hold method'', ``Zooming K times''.
+\\
+
+Um adendo interessante, é que o Exercício Programa 2 da disciplina de Laboratório de Métodos Numéricos, ministrada no primeiro semestre de 2022, tratou exatamente deste tópico.
+Podemos considerar o ato de dar zoom em uma imagem com uma maneira de interpolar pontos, formando novos pixels a partir de pixels dados. Nesse sentido, estudamos os métodos de interpolação 
+polinomial bilinear e bicúbica. Agora, continuemos a tratar dessas outras maneiras de dar zoom, que são abordadas no material.
+\\
+
+\subsection{Nearest Neighbor - Pixel Replication}
+Para efetuar esse tipo de interpolação, devemos pensar, separadamente nas linhas e nas colunas da matriz que representa a imagem. Digamos que queremos 
+aumentar a imagem por um fator de zoom $x$. Assim, assumindo que a imagem inicial tenha dimensões $3 \times 3$, por exemplo, e $x = 2$, a imagem final terá dimensões $6 \times 6$.
+Agora, seja essa imagem exmplificada pela matriz:
+\begin{table}
+\centering
+$
+\begin{bmatrix}
+	10 & 4 & 22 \\
+	2 & 18 & 7 \\
+	9 & 14 & 25
+\end{bmatrix}
+$
+\end{table}
+
+Primeiramente, devemos normalizar a posição dos pixels da nova imagem em relação à imagem antiga (sobre as linhas). Primeiramente, devemos saber a  
+razão entre o número de linhas da antiga imagem com o número de linhas da nova imagem. Ao fazer isso, devemos dividir os índices da nova imagem por essa proporção. Pegamos o 
+teto dos números obtidos e esse valor será o índice do elemento da imagem original que deverá ser colocado nessa posição. Ao fazer  
+
 
 \end{document}

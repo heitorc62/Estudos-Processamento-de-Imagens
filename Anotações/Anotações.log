@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Debian) (preloaded format=pdflatex 2021.11.26)  21 APR 2022 16:09
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Debian) (preloaded format=pdflatex 2021.11.26)  6 JUN 2022 14:06
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**/home/heitor/Documents/USP/IC/Anotações/Anotações.tex
-(/home/heitor/Documents/USP/IC/Anotações/Anotações.tex
+**/home/heitor/Documents/USP/IC/Estudos-Processamento-de-Imagens/Anotações/Anotações.tex
+(/home/heitor/Documents/USP/IC/Estudos-Processamento-de-Imagens/Anotações/Anotações.tex
 LaTeX2e <2020-10-01> patch level 4
 L3 programming layer <2021-01-09> xparse <2020-03-03> (/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2020/04/10 v1.4m Standard LaTeX document class
@@ -40,9 +40,49 @@ Package babel Info: Making " an active character on input line 143.
 Package: inputenc 2020/08/01 v1.3d Input encoding file
 \inpenc@prehook=\toks15
 \inpenc@posthook=\toks16
-) (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
+) (/usr/share/texlive/texmf-dist/tex/latex/contour/contour.sty
+Package: contour 2004/11/18 v2.14 Print contoured text (HH, MH)
+ (/usr/share/texlive/texmf-dist/tex/latex/graphics/color.sty
+Package: color 2020/02/24 v1.2b Standard LaTeX Color (DPC)
+ (/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package color Info: Driver file: pdftex.def on input line 147.
+ (/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2020/10/05 v1.2a Graphics/color driver for pdftex
+)) (/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+\con@length=\skip49
+
+Loading configuration file `contour.cfg'.
+(/usr/share/texlive/texmf-dist/tex/latex/contour/contour.cfg
+File: contour.cfg 2004/11/18 v2.14 Print contoured text (HH, MH)
+)
+contour: Using driver file `pdftex.cnt'.
+(/usr/share/texlive/texmf-dist/tex/latex/contour/pdftex.cnt
+File: pdftex.cnt 2004/11/18 v2.14 Print contoured text (HH, MH)
+)) (/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
+ (/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+LaTeX Info: Redefining \color on input line 709.
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
+Package xcolor Info: Model `RGB' extended on input line 1364.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
+ (/usr/share/texlive/texmf-dist/tex/latex/graphics/dvipsnam.def
+File: dvipsnam.def 2016/06/17 v3.0m Driver-dependent file (DPC,SPQR)
+)) (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2020/09/23 v2.17i AMS math features
-\@mathmargin=\skip49
+\@mathmargin=\skip50
 
 For additional information on amsmath, use the `?' option.
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
@@ -89,8 +129,8 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
 \totwidth@=\dimen147
 \lineht@=\dimen148
 \@envbody=\toks20
-\multlinegap=\skip50
-\multlinetaggap=\skip51
+\multlinegap=\skip51
+\multlinetaggap=\skip52
 \mathdisplay@stack=\toks21
 LaTeX Info: Redefining \[ on input line 2923.
 LaTeX Info: Redefining \] on input line 2924.
@@ -103,15 +143,11 @@ Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks22
 ) (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
 Package: graphics 2020/08/30 v1.4c Standard LaTeX Graphics (DPC,SPQR)
- (/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
-Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
-) (/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+ (/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: pdftex.def on input line 105.
- (/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def
-File: pdftex.def 2020/10/05 v1.2a Graphics/color driver for pdftex
-))
+)
 \Gin@req@height=\dimen149
 \Gin@req@width=\dimen150
 ) (/usr/share/texlive/texmf-dist/tex/latex/todonotes/todonotes.sty
@@ -127,22 +163,7 @@ Package: xkeyval 2020/11/20 v2.8 package option processing (HA)
 )
 \XKV@depth=\count199
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
-)) (/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
-Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
- (/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg
-File: color.cfg 2016/01/02 v1.6 sample color configuration
-)
-Package xcolor Info: Driver file: pdftex.def on input line 225.
-Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
-Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
-Package xcolor Info: Model `RGB' extended on input line 1364.
-Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
-Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
-Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
-Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
-Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
-Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
-) (/usr/share/texlive/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty (/usr/share/texlive/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty (/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
+)) (/usr/share/texlive/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty (/usr/share/texlive/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty (/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
 \pgfutil@everybye=\toks25
 \pgfutil@tempdima=\dimen151
 \pgfutil@tempdimb=\dimen152
@@ -334,35 +355,35 @@ Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
 \calc@Bcount=\count288
 \calc@Adimen=\dimen257
 \calc@Bdimen=\dimen258
-\calc@Askip=\skip52
-\calc@Bskip=\skip53
+\calc@Askip=\skip53
+\calc@Bskip=\skip54
 LaTeX Info: Redefining \setlength on input line 80.
 LaTeX Info: Redefining \addtolength on input line 81.
 \calc@Ccount=\count289
-\calc@Cskip=\skip54
+\calc@Cskip=\skip55
 )
 \c@@todonotes@numberoftodonotes=\count290
 ) (/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2020-01-29 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count291
 \l__pdf_internal_box=\box60
-) (/home/heitor/Documents/USP/IC/Anotações/Anotações.aux)
+) (/home/heitor/Documents/USP/IC/Estudos-Processamento-de-Imagens/Anotações/Anotações.aux)
 \openout1 = `Anotações.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
  (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count292
@@ -383,48 +404,122 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
 
-Package todonotes Warning: The length marginparwidth is less than 2cm and will most likely cause issues with the appearance of inserted todonotes. The issue can be solved by adding a line like \setlength {\marginparwidth }{2cm} prior to loading the todonotes package. on input line 12.
+Package todonotes Warning: The length marginparwidth is less than 2cm and will most likely cause issues with the appearance of inserted todonotes. The issue can be solved by adding a line like \setlength {\marginparwidth }{2cm} prior to loading the todonotes package. on input line 14.
 
-(/home/heitor/Documents/USP/IC/Anotações/Anotações.toc)
+(/home/heitor/Documents/USP/IC/Estudos-Processamento-de-Imagens/Anotações/Anotações.toc [1
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}])
 \tf@toc=\write4
 \openout4 = `Anotações.toc'.
 
- [1
-
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-Underfull \hbox (badness 10000) in paragraph at lines 57--59
+ [2]
+Underfull \hbox (badness 10000) in paragraph at lines 59--61
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 60--62
+Underfull \hbox (badness 10000) in paragraph at lines 62--64
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 63--65
+Underfull \hbox (badness 10000) in paragraph at lines 65--67
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 66--68
+Underfull \hbox (badness 10000) in paragraph at lines 68--70
 
  []
 
-[1] (/home/heitor/Documents/USP/IC/Anotações/Anotações.aux) ) 
+[1]
+Underfull \hbox (badness 10000) in paragraph at lines 93--97
+
+ []
+
+[2] [3] [4] [5]
+<images/otica.png, id=59, 767.11594pt x 347.04657pt>
+File: images/otica.png Graphic file (type png)
+<use images/otica.png>
+Package pdftex.def Info: images/otica.png  used on input line 187.
+(pdftex.def)             Requested size: 383.55702pt x 173.52286pt.
+ [6 </home/heitor/Documents/USP/IC/Estudos-Processamento-de-Imagens/Anotações/images/otica.png>]
+<images/binaria.png, id=64, 642.4pt x 321.2pt>
+File: images/binaria.png Graphic file (type png)
+<use images/binaria.png>
+Package pdftex.def Info: images/binaria.png  used on input line 221.
+(pdftex.def)             Requested size: 321.19922pt x 160.59961pt.
+<images/grayscale.jpg, id=65, 333.245pt x 301.125pt>
+File: images/grayscale.jpg Graphic file (type jpg)
+<use images/grayscale.jpg>
+Package pdftex.def Info: images/grayscale.jpg  used on input line 228.
+(pdftex.def)             Requested size: 166.62209pt x 150.56212pt.
+<images/colorida.png, id=66, 602.25pt x 401.5pt>
+File: images/colorida.png Graphic file (type png)
+<use images/colorida.png>
+Package pdftex.def Info: images/colorida.png  used on input line 244.
+(pdftex.def)             Requested size: 240.89572pt x 160.59715pt.
+ [7 </home/heitor/Documents/USP/IC/Estudos-Processamento-de-Imagens/Anotações/images/binaria.png>]
+contour: Using real outline for `\leavevmode{\color {white}Branco}' on input line 252.
+[8 </home/heitor/Documents/USP/IC/Estudos-Processamento-de-Imagens/Anotações/images/grayscale.jpg> </home/heitor/Documents/USP/IC/Estudos-Processamento-de-Imagens/Anotações/images/colorida.png>] [9]
+<images/rgb.jpg, id=76, 299.1175pt x 230.8625pt>
+File: images/rgb.jpg Graphic file (type jpg)
+<use images/rgb.jpg>
+Package pdftex.def Info: images/rgb.jpg  used on input line 304.
+(pdftex.def)             Requested size: 117.00119pt x 90.30373pt.
+<images/avg_gray.jpg, id=77, 309.155pt x 214.8025pt>
+File: images/avg_gray.jpg Graphic file (type jpg)
+<use images/avg_gray.jpg>
+Package pdftex.def Info: images/avg_gray.jpg  used on input line 308.
+(pdftex.def)             Requested size: 117.00119pt x 81.29147pt.
+
+Underfull \hbox (badness 6927) in paragraph at lines 309--309
+[]\OT1/cmr/m/n/12 Figura 6: Ima-gem
+ []
+
+File: images/rgb.jpg Graphic file (type jpg)
+<use images/rgb.jpg>
+Package pdftex.def Info: images/rgb.jpg  used on input line 319.
+(pdftex.def)             Requested size: 117.00119pt x 90.30373pt.
+<images/weighted_gray.jpg, id=78, 339.2675pt x 210.7875pt>
+File: images/weighted_gray.jpg Graphic file (type jpg)
+<use images/weighted_gray.jpg>
+Package pdftex.def Info: images/weighted_gray.jpg  used on input line 323.
+(pdftex.def)             Requested size: 117.00119pt x 72.69281pt.
+
+Underfull \hbox (badness 6927) in paragraph at lines 324--324
+[]\OT1/cmr/m/n/12 Figura 8: Ima-gem
+ []
+
+
+Underfull \hbox (badness 2932) in paragraph at lines 324--324
+\OT1/cmr/m/n/12 Grays-cale feita uti-li-
+ []
+
+[10 </home/heitor/Documents/USP/IC/Estudos-Processamento-de-Imagens/Anotações/images/rgb.jpg> </home/heitor/Documents/USP/IC/Estudos-Processamento-de-Imagens/Anotações/images/avg_gray.jpg>] [11 </home/heitor/Documents/USP/IC/Estudos-Processamento-de-Imagens/Anotações/images/weighted_gray.jpg>]
+Underfull \hbox (badness 10000) in paragraph at lines 352--357
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 358--362
+
+ []
+
+[12] [13] (/home/heitor/Documents/USP/IC/Estudos-Processamento-de-Imagens/Anotações/Anotações.aux) ) 
 Here is how much of TeX's memory you used:
- 13674 strings out of 481232
- 273308 string characters out of 5915106
- 549966 words of memory out of 5000000
- 30364 multiletter control sequences out of 15000+600000
- 408994 words of font info for 46 fonts, out of 8000000 for 9000
+ 13853 strings out of 481232
+ 276991 string characters out of 5915106
+ 557170 words of memory out of 5000000
+ 30516 multiletter control sequences out of 15000+600000
+ 409335 words of font info for 47 fonts, out of 8000000 for 9000
  16 hyphenation exceptions out of 8191
- 102i,5n,102p,481b,195s stack positions out of 5000i,500n,10000p,200000b,80000s
- </home/heitor/.texlive2020/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1200.600pk></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb>
-Output written on /home/heitor/Documents/USP/IC/Anotações/Anotações.pdf (2 pages, 52731 bytes).
+ 102i,11n,102p,514b,351s stack positions out of 5000i,500n,10000p,200000b,80000s
+ </home/heitor/.texlive2020/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1440.600pk> </home/heitor/.texlive2020/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1200.600pk></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
+Output written on /home/heitor/Documents/USP/IC/Estudos-Processamento-de-Imagens/Anotações/Anotações.pdf (15 pages, 688540 bytes).
 PDF statistics:
- 59 PDF objects out of 1000 (max. 8388607)
- 33 compressed objects within 1 object stream
+ 125 PDF objects out of 1000 (max. 8388607)
+ 75 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 109 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 144 words of extra memory for PDF output out of 10000 (max. 10000000)
 
