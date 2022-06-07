@@ -36,3 +36,10 @@
 \contentsline {subsection}{\numberline {12.1}Proporção da Tela}{12}{}%
 \contentsline {section}{\numberline {13}Mais sobre Zoom}{12}{}%
 \contentsline {subsection}{\numberline {13.1}Nearest Neighbor - Pixel Replication}{12}{}%
+\contentsline {subsection}{\numberline {13.2}Zero-Order Hold - Bloqueio de Ordem Zero}{13}{}%
+\contentsline {subsection}{\numberline {13.3}K-times Zooming}{14}{}%
+\contentsline {section}{\numberline {14}Resolução Espacial - Spatial Resolution}{16}{}%
+\contentsline {subsection}{\numberline {14.1}Pixels por Polegada}{16}{}%
+\contentsline {subsection}{\numberline {14.2}Pontos por Polegada}{17}{}%
+\contentsline {section}{\numberline {15}Resolução Grayscale}{17}{}%
+\contentsline {section}{\numberline {16}Conceito de Quantização}{17}{}%

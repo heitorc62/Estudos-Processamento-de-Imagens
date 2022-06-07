@@ -364,7 +364,7 @@ polinomial bilinear e bicúbica. Agora, continuemos a tratar dessas outras manei
 Para efetuar esse tipo de interpolação, devemos pensar, separadamente nas linhas e nas colunas da matriz que representa a imagem. Digamos que queremos 
 aumentar a imagem por um fator de zoom $x$. Assim, assumindo que a imagem inicial tenha dimensões $3 \times 3$, por exemplo, e $x = 2$, a imagem final terá dimensões $6 \times 6$.
 Agora, seja essa imagem exmplificada pela matriz:
-\begin{table}
+\begin{table}[!htbp]
 \centering
 $
 \begin{bmatrix}
@@ -375,9 +375,209 @@ $
 $
 \end{table}
 
-Primeiramente, devemos normalizar a posição dos pixels da nova imagem em relação à imagem antiga (sobre as linhas). Primeiramente, devemos saber a  
-razão entre o número de linhas da antiga imagem com o número de linhas da nova imagem. Ao fazer isso, devemos dividir os índices da nova imagem por essa proporção. Pegamos o 
-teto dos números obtidos e esse valor será o índice do elemento da imagem original que deverá ser colocado nessa posição. Ao fazer  
+Primeiramente, devemos normalizar a posição dos pixels da nova imagem em relação à imagem antiga, fazemos isso sobre as linhas e sobre as colunas, obtendo uma razão entre 
+o número de linhas da imagem original e o número de linhas da nova imagem. Análogo, para colunas. Então, obtemos duas proporções sobre as dimensões das duas imagens. 
+Agora, múltiplicamos os índices de cada elemento da nova imagem por essa proporção. Desse modo, atribuiremos o valor do elemento (na imagem original) que possua índice mais próximo ao que 
+foi calculado. Observe no exemplo, onde queremos interpolar os pontos $P_1$ e $P_2$.
 
+$
+\begin{bmatrix}
+	10 & 4 & 22 \\
+	2 & 18 & 7 \\
+	9 & 14 & 25
+\end{bmatrix}
+\Rightarrow 
+\begin{bmatrix}
+	P_1 &  x &  x & x & x  & x \\
+     x   &  x & x &  P_2 & x & x \\
+	 x	& x & x &  x  &  x  & x  \\
+	 x	& x & x &  x  &  x  & x \\
+	 x	& x &  x  &  x  & x & x \\
+	 x	& x & x &  x  &  x  & x \\
+	 x	& x & x & x  & x  & x 
+
+\end{bmatrix}$
+Sabemos que a razão entre as linhas é: $\dfrac{3}{6} = \dfrac{1}{2}$ e as colunas a mesma. Então, o ponto $P_1$ tem coordenadas $(0, 0)$. 
+Fazendo um produto escalar de $(0, 0)$ por $\left(\dfrac{1}{2}, \dfrac{1}{2}\right)$ teremos $(0, 0)$. O ponto $P_1$ tem ``vizinho mais próximo'' o pixel 
+de coordenadas $(0, 0)$ na imagem original. $P_1 = 10$. Já em relação à $P_2$, teremos: $(1, 3) \cdot \left(\dfrac{1}{2}, \dfrac{1}{2}\right) = \left(0.5, 1.5\right)$. 
+Tomando o teto: $(1, 2)$. O elemento $P_2$ tem vizinho mais próximo na imagem original o elemento de índice $(1, 2)$ e recebe seu valor. 
+$P_2 = 7$. Fazendo o mesmo processo para todos os elementos, teremos a imagem com ``zoom'', ou seja, a imagem interpolada.
+\begin{itemize}
+\item Vantagem:
+\\
+É um processo extremamente simples.
+\item Desvantagem:
+\\
+A imagem fica com um aspecto borrado.
+\end{itemize}
+Além disso, a imagem final terá tamanho tal que 
+\\
+$tamanhoFinal = \#linhasDaImagemOriginal \cdot fatorZoom \times \#colunasDaImagemOriginal \cdot fatorZoom$
+\subsection{Zero-Order Hold - Bloqueio de Ordem Zero}
+Esse algoritmo de zoom funciona de maneir muito simples. Para obter a imagem com zoom, devemos, colocar, entre os pixels da matriz da imagem original, 
+pixels que tenham valores correspondentes à média dos seus vizinhos. Tome o exemplo:
+\begin{center}
+$
+\begin{bmatrix}
+1 & 2 \\
+3 & 4
+\end{bmatrix}
+$
+\end{center}
+Inserindo uma linha entre as linhas dessa matriz, teremos:
+\begin{table}
+\centering
+$
+\begin{bmatrix}
+1 & 1 & 2 \\
+3 & 3 & 4
+\end{bmatrix}
+$
+\end{table}
+
+Observe que os valores insridos são o piso das médias obtidas. Agora, inserindo linhas entre as linhas:
+
+\begin{table}
+	\centering
+	$
+	\begin{bmatrix}
+	1 & 1 & 2 \\
+	2 & 2 & 3 \\
+	3 & 3 & 4
+	\end{bmatrix}
+	$
+\end{table}
+Note que ocorreu o mesmo processo. A interpolação, ``zoom'' está feita.
+\begin{itemize}
+\item Vantagem:
+\\
+A imagem não fica com um aspecto borrado.
+\item Desvantagem:
+\\
+Teremos que efeturar zoom nos baseando em potências de 2.
+\end{itemize}
+
+\subsection{K-times Zooming}
+Esse algoritmo sana problemas dos que foram discutidos anteriormente. $K$ significa o fator de zoom.
+Para explicar esse algoritmo, usaremos um exemplo. Tome a seguinte matriz como representação de uma imagem.
+\begin{table}[!htbp]
+	\centering
+	$
+	\begin{bmatrix}
+	15 & 30 & 15 \\
+	30 & 15 & 30
+	\end{bmatrix}
+	$
+\end{table}
+Primeiramente, supohemos $K = 3$. O número de valores que devem ser inseridos entre cada coluna e cada linha é $K - 1 = 3 - 1 = 2$.
+Assim, iniciando pelas linhas (inserindo elementos entre as colunas) da matriz, temos que tomar os dois primeiros pixels 
+adjacentes. ($15$ e $30$).
+Subtraímos $15$ de $30$ ($15$). Dividimos o resultado da subtração por $K$ ($15/3 = 5$). Esse resultado é chamado de OP.
+Agora devemos adicionar OP ao menor dos dois pixels escolhidos inicialmente ($5 + 15 = 20$) esse será o primeiro valor 
+a ser inserido na matriz. Somamos OP a esse último resultado ($OP + 20 = 5 + 20 = 25$) e esse será o segundo elemento a ser
+inserido na matriz, note que é o elemento de número $k - 1 = 2$ que foi inserido entre os dois primeiros elementos da primeira 
+linha da matriz. Devemos fazer isso para todas as colunas. Ao fim desse processo, teremos a matriz:
+\begin{table}[!htbp]
+	\centering
+	$
+	\begin{bmatrix}
+	15 & 20 & 25 & 30 & 20 & 25 & 15 \\
+	30 & 20 & 25 & 15 & 20 & 25 & 30
+	\end{bmatrix}
+	$
+\end{table}
+\\
+Depois de fazer isso, devemos ordenar os pixels inseridos de acordo com a ordem estaelecida na matriz. Por exemplo, no trecho:
+$\begin{bmatrix}
+	30 & \textcolor{blue}{20} & \textcolor{blue}{25} & 15	
+\end{bmatrix}
+$
+\\
+Tivemos os elementos em \textcolor{blue}{azul} inseridos. Note que a ordem da matriz era decrescente, da esquerda para a direita, indo 
+de $30$ indo até $15$. Então, ordenaremos $\textcolor{blue}{20}$ e $\textcolor{blue}{25}$ em ordem decrescente também. Desse modo, 
+Obteremos a seguinte matriz:
+\begin{table}[!htbp]
+	\centering
+	$
+	\begin{bmatrix}
+	15 & 20 & 25 & 30 & 25 & 20 & 15 \\
+	30 & 25 & 20 & 15 & 20 & 25 & 30
+	\end{bmatrix}
+	$
+\end{table}
+\\
+
+Agora, precisamos efetuar o mesmo processo entre as linhas da matriz. Teremos:
+\begin{table}[!htbp]
+	\centering
+	$
+	\begin{bmatrix}
+		15 & 20 & 25 & 30 & 25 & 20 & 15 \\
+		20 & 21 & 21 & 20 & 21 & 21 & 20 \\
+		25 & 22 & 22 & 25 & 22 & 22 & 25 \\
+		30 & 25 & 20 & 15 & 20 & 25 & 30
+	\end{bmatrix}
+	$
+\end{table}
+Observe que usamos o piso da divisão de $5$ por $3$, e obtemos OP igual a $1$.
+
+\large{\textcolor{red}{FIQUEI CONFUSO AQUI. O TUTORIAL DIZ QUE A IMAGEM FINAL FICA ASSIM, MAS EU NÃO TERIA QUE ORDENAR OS ELEMENTOS 
+QUE FORAM INSERIDOS NOVAMENTE?}}
+
+As dimensões da imagem final serão: $(K(\#linhas - 1) + 1) \times (K(\#colunas - 1) + 1)$
+
+\begin{itemize}
+	\item Vantagens:
+ 	\\
+	Esse algoritmo combina as qualidades dos dois msotrados anteriormente. Não temos restrições quanto às dimensões da imagem final 
+	e a imagem não fica muito borrada.
+	\item Desvantagens:
+ 	\\
+	Devido à necessidade de ordenação, esse algoritmo fica computacionamente mais custoso que os demais.
+\end{itemize}
+
+\section{Resolução Espacial - Spatial Resolution}
+Esse tipo de resolução se relaciona ao menor detalhe que pode ser identificado em uma imagem. Podemos definir essa resolução também como 
+o número de pixels independentes por polegada. Em suma, esse conceito se refere à comparação de imagens de uma mesma resolução (mesmas 
+dimensões) para saber qual possui mais nitidez. Observe:
+\begin{figure}[!htb]
+	\centering
+	\minipage{0.30\textwidth}
+	  \includegraphics[width=\linewidth]{images/einsteinNitido.jpg}
+	  \caption{Imagem com maior resolução espacial}
+	\endminipage\hspace{1cm}
+	\minipage{0.30\textwidth}
+	  \includegraphics[width=\linewidth]{images/einstein_spatial.jpg}
+	  \caption{Imagem com menor resolução espacial}
+	\endminipage
+\end{figure}
+Podemos medir esse tipo de resolução das seguintes maneiras:
+\begin{itemize}
+	\item Pontos por Polegada.
+ 	\item Pixels por Polegada.
+\end{itemize}
+
+\subsection{Pixels por Polegada}
+Geralmente usada para medir qualidade de telas, sabemos que, para obter essa unidade, devemos, primeiramente, 
+obter a diagonal em pixels do visor calculada, a partir de sua resolução em pixels. $c = \sqrt[]{altura^2 + largura^2}$
+Depois disso, dividiremos essa diagonal em pixels pelo tamanho da diagonal. $PPi = c/diagonalPolegadas$.
+
+\subsection{Pontos por Polegada}
+Essa unidade é, geralmente, utilizada para representar a qualidade de impressoras. Isto é, mede quantos pontos de tinta são impressos 
+por polegada.
+
+\section{Resolução Grayscale}
+Resgatando conceitos já tratados anteriormente, a resolução em Grayscale tem íntima relação com a medida de $bpp$ (bits por pixel). Ou seja, 
+quanto mais nuances de cinza puderem ser representadas, maior a resolução dessa imagem em termos de grayscale. Ainda, o total de nuances de cinza 
+que podem ser exibidas nessa imagem com $bpp = k$ é tal que $2^k$, mas podemos também representar essa resolução puramente pelo número de 
+$bpp$ e não pela quantidade de nuances de cinza que esse número produz.
+
+\section{Conceito de Quantização}
 
 \end{document}
+
+
+
+
+
+

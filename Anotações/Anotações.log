@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Debian) (preloaded format=pdflatex 2021.11.26)  6 JUN 2022 14:06
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Debian) (preloaded format=pdflatex 2021.11.26)  6 JUN 2022 22:02
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -506,20 +506,56 @@ Underfull \hbox (badness 10000) in paragraph at lines 358--362
 
  []
 
-[12] [13] (/home/heitor/Documents/USP/IC/Estudos-Processamento-de-Imagens/Anotações/Anotações.aux) ) 
+[12]
+Overfull \hbox (83.31918pt too wide) in paragraph at lines 413--416
+\OML/cmm/m/it/12 tamanhoFinal \OT1/cmr/m/n/12 = #\OML/cmm/m/it/12 linhasDaImagemOriginal \OMS/cmsy/m/n/12 ^^A \OML/cmm/m/it/12 fatorZoom \OMS/cmsy/m/n/12 ^^B \OT1/cmr/m/n/12 #\OML/cmm/m/it/12 colunasDaImagemOriginal \OMS/cmsy/m/n/12 ^^A
+ []
+
+[13]
+Underfull \hbox (badness 10000) in paragraph at lines 461--509
+
+ []
+
+[14]
+Overfull \hbox (1.3533pt too wide) in paragraph at lines 525--526
+[][]\OT1/cmr/m/n/14.4 FIQUEI CON-FUSO AQUI. O TU-TO-RIAL DIZ QUE A IMA-
+ []
+
+[15]
+<images/einsteinNitido.jpg, id=100, 186.6975pt x 182.6825pt>
+File: images/einsteinNitido.jpg Graphic file (type jpg)
+<use images/einsteinNitido.jpg>
+Package pdftex.def Info: images/einsteinNitido.jpg  used on input line 546.
+(pdftex.def)             Requested size: 117.00119pt x 114.48567pt.
+<images/einstein_spatial.jpg, id=101, 186.6975pt x 182.6825pt>
+File: images/einstein_spatial.jpg Graphic file (type jpg)
+<use images/einstein_spatial.jpg>
+Package pdftex.def Info: images/einstein_spatial.jpg  used on input line 550.
+(pdftex.def)             Requested size: 117.00119pt x 114.48567pt.
+
+Underfull \hbox (badness 3000) in paragraph at lines 551--551
+[]\OT1/cmr/m/n/12 Figura 10: Ima-gem
+ []
+
+
+Underfull \hbox (badness 1303) in paragraph at lines 551--551
+\OT1/cmr/m/n/12 com me-nor re-solu^^Xc~ao
+ []
+
+[16 </home/heitor/Documents/USP/IC/Estudos-Processamento-de-Imagens/Anotações/images/einsteinNitido.jpg> </home/heitor/Documents/USP/IC/Estudos-Processamento-de-Imagens/Anotações/images/einstein_spatial.jpg>] [17] (/home/heitor/Documents/USP/IC/Estudos-Processamento-de-Imagens/Anotações/Anotações.aux) ) 
 Here is how much of TeX's memory you used:
- 13853 strings out of 481232
- 276991 string characters out of 5915106
- 557170 words of memory out of 5000000
- 30516 multiletter control sequences out of 15000+600000
- 409335 words of font info for 47 fonts, out of 8000000 for 9000
+ 13869 strings out of 481232
+ 277392 string characters out of 5915106
+ 561170 words of memory out of 5000000
+ 30530 multiletter control sequences out of 15000+600000
+ 410401 words of font info for 51 fonts, out of 8000000 for 9000
  16 hyphenation exceptions out of 8191
- 102i,11n,102p,514b,351s stack positions out of 5000i,500n,10000p,200000b,80000s
- </home/heitor/.texlive2020/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1440.600pk> </home/heitor/.texlive2020/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1200.600pk></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on /home/heitor/Documents/USP/IC/Estudos-Processamento-de-Imagens/Anotações/Anotações.pdf (15 pages, 688540 bytes).
+ 102i,11n,102p,514b,359s stack positions out of 5000i,500n,10000p,200000b,80000s
+ </home/heitor/.texlive2020/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1440.600pk> </home/heitor/.texlive2020/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1200.600pk></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
+Output written on /home/heitor/Documents/USP/IC/Estudos-Processamento-de-Imagens/Anotações/Anotações.pdf (19 pages, 733259 bytes).
 PDF statistics:
- 125 PDF objects out of 1000 (max. 8388607)
- 75 compressed objects within 1 object stream
+ 152 PDF objects out of 1000 (max. 8388607)
+ 93 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 144 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 154 words of extra memory for PDF output out of 10000 (max. 10000000)
 
