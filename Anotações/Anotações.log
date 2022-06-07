@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Debian) (preloaded format=pdflatex 2021.11.26)  6 JUN 2022 23:46
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Debian) (preloaded format=pdflatex 2021.11.26)  7 JUN 2022 15:08
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -134,7 +134,16 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
 \mathdisplay@stack=\toks21
 LaTeX Info: Redefining \[ on input line 2923.
 LaTeX Info: Redefining \] on input line 2924.
-) (/usr/share/texlive/texmf-dist/tex/latex/tools/indentfirst.sty
+) (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+ (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+)) (/usr/share/texlive/texmf-dist/tex/latex/tools/indentfirst.sty
 Package: indentfirst 1995/11/23 v1.03 Indent first paragraph (DPC)
 ) (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 2020/09/09 v1.2b Enhanced LaTeX Graphics (DPC,SPQR)
@@ -370,20 +379,20 @@ File: l3backend-pdftex.def 2020-01-29 L3 backend support: PDF output (pdfTeX)
 ) (/home/heitor/Documents/USP/IC/Estudos-Processamento-de-Imagens/Anotações/Anotações.aux)
 \openout1 = `Anotações.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
  (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count292
@@ -404,283 +413,435 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
 
-Package todonotes Warning: The length marginparwidth is less than 2cm and will most likely cause issues with the appearance of inserted todonotes. The issue can be solved by adding a line like \setlength {\marginparwidth }{2cm} prior to loading the todonotes package. on input line 14.
+Package todonotes Warning: The length marginparwidth is less than 2cm and will most likely cause issues with the appearance of inserted todonotes. The issue can be solved by adding a line like \setlength {\marginparwidth }{2cm} prior to loading the todonotes package. on input line 15.
 
-(/home/heitor/Documents/USP/IC/Estudos-Processamento-de-Imagens/Anotações/Anotações.toc [1
+(/home/heitor/Documents/USP/IC/Estudos-Processamento-de-Imagens/Anotações/Anotações.toc
+LaTeX Font Info:    Trying to load font information for U+msa on input line 3.
+ (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 3.
+ (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+) [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}])
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2])
 \tf@toc=\write4
 \openout4 = `Anotações.toc'.
 
- [2]
-Underfull \hbox (badness 10000) in paragraph at lines 59--61
+ [3]
+Underfull \hbox (badness 10000) in paragraph at lines 60--62
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 62--64
+Underfull \hbox (badness 10000) in paragraph at lines 63--65
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 65--67
+Underfull \hbox (badness 10000) in paragraph at lines 66--68
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 68--70
+Underfull \hbox (badness 10000) in paragraph at lines 69--71
 
  []
 
 [1]
-Underfull \hbox (badness 10000) in paragraph at lines 93--97
+Underfull \hbox (badness 10000) in paragraph at lines 94--98
 
  []
 
 [2] [3] [4] [5]
-<images/otica.png, id=59, 767.11594pt x 347.04657pt>
+<images/otica.png, id=62, 767.11594pt x 347.04657pt>
 File: images/otica.png Graphic file (type png)
 <use images/otica.png>
-Package pdftex.def Info: images/otica.png  used on input line 187.
+Package pdftex.def Info: images/otica.png  used on input line 188.
 (pdftex.def)             Requested size: 383.55702pt x 173.52286pt.
  [6 </home/heitor/Documents/USP/IC/Estudos-Processamento-de-Imagens/Anotações/images/otica.png>]
-<images/binaria.png, id=64, 642.4pt x 321.2pt>
+<images/binaria.png, id=67, 642.4pt x 321.2pt>
 File: images/binaria.png Graphic file (type png)
 <use images/binaria.png>
-Package pdftex.def Info: images/binaria.png  used on input line 221.
+Package pdftex.def Info: images/binaria.png  used on input line 222.
 (pdftex.def)             Requested size: 321.19922pt x 160.59961pt.
-<images/grayscale.jpg, id=65, 333.245pt x 301.125pt>
+<images/grayscale.jpg, id=68, 333.245pt x 301.125pt>
 File: images/grayscale.jpg Graphic file (type jpg)
 <use images/grayscale.jpg>
-Package pdftex.def Info: images/grayscale.jpg  used on input line 228.
+Package pdftex.def Info: images/grayscale.jpg  used on input line 229.
 (pdftex.def)             Requested size: 166.62209pt x 150.56212pt.
-<images/colorida.png, id=66, 602.25pt x 401.5pt>
+<images/colorida.png, id=69, 602.25pt x 401.5pt>
 File: images/colorida.png Graphic file (type png)
 <use images/colorida.png>
-Package pdftex.def Info: images/colorida.png  used on input line 244.
+Package pdftex.def Info: images/colorida.png  used on input line 245.
 (pdftex.def)             Requested size: 240.89572pt x 160.59715pt.
  [7 </home/heitor/Documents/USP/IC/Estudos-Processamento-de-Imagens/Anotações/images/binaria.png>]
-contour: Using real outline for `\leavevmode{\color {white}Branco}' on input line 252.
+contour: Using real outline for `\leavevmode{\color {white}Branco}' on input line 253.
 [8 </home/heitor/Documents/USP/IC/Estudos-Processamento-de-Imagens/Anotações/images/grayscale.jpg> </home/heitor/Documents/USP/IC/Estudos-Processamento-de-Imagens/Anotações/images/colorida.png>] [9]
-<images/rgb.jpg, id=76, 299.1175pt x 230.8625pt>
+<images/rgb.jpg, id=79, 299.1175pt x 230.8625pt>
 File: images/rgb.jpg Graphic file (type jpg)
 <use images/rgb.jpg>
-Package pdftex.def Info: images/rgb.jpg  used on input line 304.
+Package pdftex.def Info: images/rgb.jpg  used on input line 305.
 (pdftex.def)             Requested size: 117.00119pt x 90.30373pt.
-<images/avg_gray.jpg, id=77, 309.155pt x 214.8025pt>
+<images/avg_gray.jpg, id=80, 309.155pt x 214.8025pt>
 File: images/avg_gray.jpg Graphic file (type jpg)
 <use images/avg_gray.jpg>
-Package pdftex.def Info: images/avg_gray.jpg  used on input line 308.
+Package pdftex.def Info: images/avg_gray.jpg  used on input line 309.
 (pdftex.def)             Requested size: 117.00119pt x 81.29147pt.
 
-Underfull \hbox (badness 6927) in paragraph at lines 309--309
+Underfull \hbox (badness 6927) in paragraph at lines 310--310
 []\OT1/cmr/m/n/12 Figura 6: Ima-gem
  []
 
 File: images/rgb.jpg Graphic file (type jpg)
 <use images/rgb.jpg>
-Package pdftex.def Info: images/rgb.jpg  used on input line 319.
+Package pdftex.def Info: images/rgb.jpg  used on input line 320.
 (pdftex.def)             Requested size: 117.00119pt x 90.30373pt.
-<images/weighted_gray.jpg, id=78, 339.2675pt x 210.7875pt>
+<images/weighted_gray.jpg, id=81, 339.2675pt x 210.7875pt>
 File: images/weighted_gray.jpg Graphic file (type jpg)
 <use images/weighted_gray.jpg>
-Package pdftex.def Info: images/weighted_gray.jpg  used on input line 323.
+Package pdftex.def Info: images/weighted_gray.jpg  used on input line 324.
 (pdftex.def)             Requested size: 117.00119pt x 72.69281pt.
 
-Underfull \hbox (badness 6927) in paragraph at lines 324--324
+Underfull \hbox (badness 6927) in paragraph at lines 325--325
 []\OT1/cmr/m/n/12 Figura 8: Ima-gem
  []
 
 
-Underfull \hbox (badness 2932) in paragraph at lines 324--324
+Underfull \hbox (badness 2932) in paragraph at lines 325--325
 \OT1/cmr/m/n/12 Grays-cale feita uti-li-
  []
 
 [10 </home/heitor/Documents/USP/IC/Estudos-Processamento-de-Imagens/Anotações/images/rgb.jpg> </home/heitor/Documents/USP/IC/Estudos-Processamento-de-Imagens/Anotações/images/avg_gray.jpg>] [11 </home/heitor/Documents/USP/IC/Estudos-Processamento-de-Imagens/Anotações/images/weighted_gray.jpg>]
-Underfull \hbox (badness 10000) in paragraph at lines 352--357
+Underfull \hbox (badness 10000) in paragraph at lines 353--358
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 358--362
+Underfull \hbox (badness 10000) in paragraph at lines 359--363
 
  []
 
 [12]
-Overfull \hbox (83.31918pt too wide) in paragraph at lines 413--416
+Overfull \hbox (83.31918pt too wide) in paragraph at lines 414--417
 \OML/cmm/m/it/12 tamanhoFinal \OT1/cmr/m/n/12 = #\OML/cmm/m/it/12 linhasDaImagemOriginal \OMS/cmsy/m/n/12 ^^A \OML/cmm/m/it/12 fatorZoom \OMS/cmsy/m/n/12 ^^B \OT1/cmr/m/n/12 #\OML/cmm/m/it/12 colunasDaImagemOriginal \OMS/cmsy/m/n/12 ^^A
  []
 
 [13]
-Underfull \hbox (badness 10000) in paragraph at lines 461--509
+Underfull \hbox (badness 10000) in paragraph at lines 462--510
 
  []
 
 [14]
-Overfull \hbox (1.3533pt too wide) in paragraph at lines 525--526
+Overfull \hbox (1.3533pt too wide) in paragraph at lines 526--527
 [][]\OT1/cmr/m/n/14.4 FIQUEI CON-FUSO AQUI. O TU-TO-RIAL DIZ QUE A IMA-
  []
 
 [15]
-<images/einsteinNitido.jpg, id=100, 186.6975pt x 182.6825pt>
+<images/einsteinNitido.jpg, id=103, 186.6975pt x 182.6825pt>
 File: images/einsteinNitido.jpg Graphic file (type jpg)
 <use images/einsteinNitido.jpg>
-Package pdftex.def Info: images/einsteinNitido.jpg  used on input line 546.
+Package pdftex.def Info: images/einsteinNitido.jpg  used on input line 547.
 (pdftex.def)             Requested size: 117.00119pt x 114.48567pt.
-<images/einstein_spatial.jpg, id=101, 186.6975pt x 182.6825pt>
+<images/einstein_spatial.jpg, id=104, 186.6975pt x 182.6825pt>
 File: images/einstein_spatial.jpg Graphic file (type jpg)
 <use images/einstein_spatial.jpg>
-Package pdftex.def Info: images/einstein_spatial.jpg  used on input line 550.
+Package pdftex.def Info: images/einstein_spatial.jpg  used on input line 551.
 (pdftex.def)             Requested size: 117.00119pt x 114.48567pt.
 
-Underfull \hbox (badness 3000) in paragraph at lines 551--551
+Underfull \hbox (badness 3000) in paragraph at lines 552--552
 []\OT1/cmr/m/n/12 Figura 10: Ima-gem
  []
 
 
-Underfull \hbox (badness 1303) in paragraph at lines 551--551
+Underfull \hbox (badness 1303) in paragraph at lines 552--552
 \OT1/cmr/m/n/12 com me-nor re-solu^^Xc~ao
  []
 
 [16 </home/heitor/Documents/USP/IC/Estudos-Processamento-de-Imagens/Anotações/images/einsteinNitido.jpg> </home/heitor/Documents/USP/IC/Estudos-Processamento-de-Imagens/Anotações/images/einstein_spatial.jpg>]
-<images/einstein256.jpg, id=105, 186.6975pt x 182.6825pt>
+<images/einstein256.jpg, id=109, 186.6975pt x 182.6825pt>
 File: images/einstein256.jpg Graphic file (type jpg)
 <use images/einstein256.jpg>
-Package pdftex.def Info: images/einstein256.jpg  used on input line 584.
+Package pdftex.def Info: images/einstein256.jpg  used on input line 585.
 (pdftex.def)             Requested size: 66.29929pt x 64.87364pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 585--585
+Underfull \hbox (badness 10000) in paragraph at lines 586--586
 []\OT1/cmr/m/n/12 Figura 11:
  []
 
-<images/128.jpg, id=106, 189.70876pt x 182.6825pt>
+<images/128.jpg, id=110, 189.70876pt x 182.6825pt>
 File: images/128.jpg Graphic file (type jpg)
 <use images/128.jpg>
-Package pdftex.def Info: images/128.jpg  used on input line 588.
+Package pdftex.def Info: images/128.jpg  used on input line 589.
 (pdftex.def)             Requested size: 66.29929pt x 63.84505pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 589--589
+Underfull \hbox (badness 10000) in paragraph at lines 590--590
 []\OT1/cmr/m/n/12 Figura 12:
  []
 
-<images/64.jpg, id=107, 188.705pt x 181.67876pt>
+<images/64.jpg, id=111, 188.705pt x 181.67876pt>
 File: images/64.jpg Graphic file (type jpg)
 <use images/64.jpg>
-Package pdftex.def Info: images/64.jpg  used on input line 592.
+Package pdftex.def Info: images/64.jpg  used on input line 593.
 (pdftex.def)             Requested size: 66.29929pt x 63.82968pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 593--593
+Underfull \hbox (badness 10000) in paragraph at lines 594--594
 []\OT1/cmr/m/n/12 Figura 13:
  []
 
-<images/32.jpg, id=108, 189.70876pt x 183.68625pt>
+<images/32.jpg, id=112, 189.70876pt x 183.68625pt>
 File: images/32.jpg Graphic file (type jpg)
 <use images/32.jpg>
-Package pdftex.def Info: images/32.jpg  used on input line 596.
+Package pdftex.def Info: images/32.jpg  used on input line 597.
 (pdftex.def)             Requested size: 66.29929pt x 64.19585pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 597--597
+Underfull \hbox (badness 10000) in paragraph at lines 598--598
 []\OT1/cmr/m/n/12 Figura 14:
  []
 
-<images/16.jpg, id=109, 183.68625pt x 188.705pt>
+<images/16.jpg, id=113, 183.68625pt x 188.705pt>
 File: images/16.jpg Graphic file (type jpg)
 <use images/16.jpg>
-Package pdftex.def Info: images/16.jpg  used on input line 604.
+Package pdftex.def Info: images/16.jpg  used on input line 605.
 (pdftex.def)             Requested size: 66.29929pt x 68.11226pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 605--605
+Underfull \hbox (badness 10000) in paragraph at lines 606--606
 []\OT1/cmr/m/n/12 Figura 15:
  []
 
-<images/8.jpg, id=110, 186.6975pt x 182.6825pt>
+<images/8.jpg, id=114, 186.6975pt x 182.6825pt>
 File: images/8.jpg Graphic file (type jpg)
 <use images/8.jpg>
-Package pdftex.def Info: images/8.jpg  used on input line 608.
+Package pdftex.def Info: images/8.jpg  used on input line 609.
 (pdftex.def)             Requested size: 66.29929pt x 64.87364pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 609--609
+Underfull \hbox (badness 10000) in paragraph at lines 610--610
 []\OT1/cmr/m/n/12 Figura 16:
  []
 
 
-Underfull \hbox (badness 2913) in paragraph at lines 609--609
+Underfull \hbox (badness 2913) in paragraph at lines 610--610
 \OT1/cmr/m/n/12 8 n^^S^^Pveis de
  []
 
-<images/4.jpg, id=111, 187.70125pt x 183.68625pt>
+<images/4.jpg, id=115, 187.70125pt x 183.68625pt>
 File: images/4.jpg Graphic file (type jpg)
 <use images/4.jpg>
-Package pdftex.def Info: images/4.jpg  used on input line 612.
+Package pdftex.def Info: images/4.jpg  used on input line 613.
 (pdftex.def)             Requested size: 66.29929pt x 64.88254pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 613--613
+Underfull \hbox (badness 10000) in paragraph at lines 614--614
 []\OT1/cmr/m/n/12 Figura 17:
  []
 
 
-Underfull \hbox (badness 2913) in paragraph at lines 613--613
+Underfull \hbox (badness 2913) in paragraph at lines 614--614
 \OT1/cmr/m/n/12 4 n^^S^^Pveis de
  []
 
-<images/2.jpg, id=112, 184.69pt x 181.67876pt>
+<images/2.jpg, id=116, 184.69pt x 181.67876pt>
 File: images/2.jpg Graphic file (type jpg)
 <use images/2.jpg>
-Package pdftex.def Info: images/2.jpg  used on input line 616.
+Package pdftex.def Info: images/2.jpg  used on input line 617.
 (pdftex.def)             Requested size: 66.29929pt x 65.21855pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 617--617
+Underfull \hbox (badness 10000) in paragraph at lines 618--618
 []\OT1/cmr/m/n/12 Figura 18:
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 617--617
+Underfull \hbox (badness 10000) in paragraph at lines 618--618
 \OT1/cmr/m/n/12 n^^S^^Pveis de
  []
 
 
-Overfull \hbox (9.29675pt too wide) in paragraph at lines 576--620
+Overfull \hbox (9.29675pt too wide) in paragraph at lines 577--621
 []\OT1/cmr/m/n/14.4 J^^Sa sa-be-mos que, no pro-cesso de con-vers~ao de um si-nal anal^^Sogico
  []
 
 [17] [18 </home/heitor/Documents/USP/IC/Estudos-Processamento-de-Imagens/Anotações/images/einstein256.jpg> </home/heitor/Documents/USP/IC/Estudos-Processamento-de-Imagens/Anotações/images/128.jpg> </home/heitor/Documents/USP/IC/Estudos-Processamento-de-Imagens/Anotações/images/64.jpg> </home/heitor/Documents/USP/IC/Estudos-Processamento-de-Imagens/Anotações/images/32.jpg> </home/heitor/Documents/USP/IC/Estudos-Processamento-de-Imagens/Anotações/images/16.jpg> </home/heitor/Documents/USP/IC/Estudos-Processamento-de-Imagens/Anotações/images/8.jpg> </home/heitor/Documents/USP/IC/Estudos-Processamento-de-Imagens/Anotações/images/4.jpg> </home/heitor/Documents/USP/IC/Estudos-Processamento-de-Imagens/Anotações/images/2.jpg>]
-Overfull \hbox (25.58551pt too wide) in paragraph at lines 629--629
+Overfull \hbox (25.58551pt too wide) in paragraph at lines 630--630
 []\OT1/cmr/bx/n/17.28 Conceito de Dithe-ring []ACHEI ESSA SE[][]AO
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 630--633
+Underfull \hbox (badness 10000) in paragraph at lines 631--634
 
  []
 
 File: images/einsteinNitido.jpg Graphic file (type jpg)
 <use images/einsteinNitido.jpg>
-Package pdftex.def Info: images/einsteinNitido.jpg  used on input line 644.
+Package pdftex.def Info: images/einsteinNitido.jpg  used on input line 645.
 (pdftex.def)             Requested size: 117.00119pt x 114.48567pt.
-<images/histograma.jpg, id=122, 483.8075pt x 378.41376pt>
+<images/histograma.jpg, id=125, 483.8075pt x 378.41376pt>
 File: images/histograma.jpg Graphic file (type jpg)
 <use images/histograma.jpg>
-Package pdftex.def Info: images/histograma.jpg  used on input line 648.
+Package pdftex.def Info: images/histograma.jpg  used on input line 649.
 (pdftex.def)             Requested size: 145.14337pt x 113.525pt.
 
-Overfull \hbox (28.14218pt too wide) in paragraph at lines 648--649
+Overfull \hbox (28.14218pt too wide) in paragraph at lines 649--650
 [][] 
  []
 
-[19] [20 </home/heitor/Documents/USP/IC/Estudos-Processamento-de-Imagens/Anotações/images/histograma.jpg>] (/home/heitor/Documents/USP/IC/Estudos-Processamento-de-Imagens/Anotações/Anotações.aux) ) 
+[19] [20 </home/heitor/Documents/USP/IC/Estudos-Processamento-de-Imagens/Anotações/images/histograma.jpg>]
+Underfull \hbox (badness 10000) in paragraph at lines 669--675
+
+ []
+
+[21]
+Underfull \hbox (badness 10000) in paragraph at lines 693--697
+
+ []
+
+<images/origins.png, id=135, 627.34375pt x 241.90375pt>
+File: images/origins.png Graphic file (type png)
+<use images/origins.png>
+Package pdftex.def Info: images/origins.png  used on input line 707.
+(pdftex.def)             Requested size: 313.6711pt x 120.95157pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 703--711
+
+ []
+
+<images/minMax.png, id=136, 627.34375pt x 246.9225pt>
+File: images/minMax.png Graphic file (type png)
+<use images/minMax.png>
+Package pdftex.def Info: images/minMax.png  used on input line 714.
+(pdftex.def)             Requested size: 313.6711pt x 123.46094pt.
+[22 </home/heitor/Documents/USP/IC/Estudos-Processamento-de-Imagens/Anotações/images/origins.png>]
+<images/percentile.png, id=141, 627.34375pt x 245.91875pt>
+File: images/percentile.png Graphic file (type png)
+<use images/percentile.png>
+Package pdftex.def Info: images/percentile.png  used on input line 728.
+(pdftex.def)             Requested size: 250.93304pt x 98.36575pt.
+
+Overfull \hbox (8.23383pt too wide) in paragraph at lines 732--732
+[]\OT1/cmr/bx/n/17.28 Probabilidade para Trans-forma^^Xc~oes de His-
+ []
+
+[23 </home/heitor/Documents/USP/IC/Estudos-Processamento-de-Imagens/Anotações/images/minMax.png> </home/heitor/Documents/USP/IC/Estudos-Processamento-de-Imagens/Anotações/images/percentile.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 738--743
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 754--756
+
+ []
+
+[24]
+<images/hist1.jpg, id=148, 418.56375pt x 248.93pt>
+File: images/hist1.jpg Graphic file (type jpg)
+<use images/hist1.jpg>
+Package pdftex.def Info: images/hist1.jpg  used on input line 776.
+(pdftex.def)             Requested size: 209.28136pt x 124.46469pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 780--784
+
+ []
+
+[25 </home/heitor/Documents/USP/IC/Estudos-Processamento-de-Imagens/Anotações/images/hist1.jpg>]
+<images/prob3.jpg, id=152, 418.56375pt x 248.93pt>
+File: images/prob3.jpg Graphic file (type jpg)
+<use images/prob3.jpg>
+Package pdftex.def Info: images/prob3.jpg  used on input line 805.
+(pdftex.def)             Requested size: 209.28136pt x 124.46469pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 817--820
+
+ []
+
+[26 </home/heitor/Documents/USP/IC/Estudos-Processamento-de-Imagens/Anotações/images/prob3.jpg>]
+Underfull \hbox (badness 10000) in paragraph at lines 859--862
+
+ []
+
+[27]
+<images/velho.png, id=160, 353.32pt x 361.35pt>
+File: images/velho.png Graphic file (type png)
+<use images/velho.png>
+Package pdftex.def Info: images/velho.png  used on input line 866.
+(pdftex.def)             Requested size: 117.00119pt x 119.6594pt.
+
+Underfull \hbox (badness 3000) in paragraph at lines 867--867
+[]\OT1/cmr/m/n/12 Figura 26: Ima-gem
+ []
+
+<images/velhoHist.png, id=162, 602.25pt x 484.81125pt>
+File: images/velhoHist.png Graphic file (type png)
+<use images/velhoHist.png>
+Package pdftex.def Info: images/velhoHist.png  used on input line 870.
+(pdftex.def)             Requested size: 180.67639pt x 145.44449pt.
+
+Overfull \hbox (63.6752pt too wide) in paragraph at lines 870--871
+[][] 
+ []
+
+<images/novo.png, id=163, 352.31625pt x 358.33875pt>
+File: images/novo.png Graphic file (type png)
+<use images/novo.png>
+Package pdftex.def Info: images/novo.png  used on input line 878.
+(pdftex.def)             Requested size: 117.00119pt x 119.00124pt.
+File: images/velhoHist.png Graphic file (type png)
+<use images/velhoHist.png>
+Package pdftex.def Info: images/velhoHist.png  used on input line 882.
+(pdftex.def)             Requested size: 180.67639pt x 145.44449pt.
+
+Overfull \hbox (63.6752pt too wide) in paragraph at lines 882--883
+[][] 
+ []
+
+[28 </home/heitor/Documents/USP/IC/Estudos-Processamento-de-Imagens/Anotações/images/velho.png> </home/heitor/Documents/USP/IC/Estudos-Processamento-de-Imagens/Anotações/images/velhoHist.png> </home/heitor/Documents/USP/IC/Estudos-Processamento-de-Imagens/Anotações/images/novo.png>]
+Overfull \hbox (0.82123pt too wide) in paragraph at lines 903--905
+\OT1/cmr/m/n/14.4 en-trada. Nesse sen-tido, po-de-mos evi-den-ciar duas trans-forma^^Xc~oes
+ []
+
+File: images/einstein256.jpg Graphic file (type jpg)
+<use images/einstein256.jpg>
+Package pdftex.def Info: images/einstein256.jpg  used on input line 926.
+(pdftex.def)             Requested size: 117.00119pt x 114.48567pt.
+<images/graylevel4.jpg, id=171, 186.6975pt x 185.69376pt>
+File: images/graylevel4.jpg Graphic file (type jpg)
+<use images/graylevel4.jpg>
+Package pdftex.def Info: images/graylevel4.jpg  used on input line 930.
+(pdftex.def)             Requested size: 115.75124pt x 115.12894pt.
+[29]
+<images/log.png, id=175, 1416.29124pt x 743.77875pt>
+File: images/log.png Graphic file (type png)
+<use images/log.png>
+Package pdftex.def Info: images/log.png  used on input line 942.
+(pdftex.def)             Requested size: 212.43452pt x 111.562pt.
+
+Overfull \hbox (17.79327pt too wide) in paragraph at lines 937--945
+[]\OT1/cmr/m/n/14.4 H^^Sa duas trans-forma^^Xc~oes lo-gar^^S^^Ptimicas prin-ci-pais, as lo-gar^^S^^Ptimicas
+ []
+
+[30 </home/heitor/Documents/USP/IC/Estudos-Processamento-de-Imagens/Anotações/images/graylevel4.jpg> </home/heitor/Documents/USP/IC/Estudos-Processamento-de-Imagens/Anotações/images/log.png>]
+<images/einsteinEscuro.jpg, id=180, 183.68625pt x 181.67876pt>
+File: images/einsteinEscuro.jpg Graphic file (type jpg)
+<use images/einsteinEscuro.jpg>
+Package pdftex.def Info: images/einsteinEscuro.jpg  used on input line 958.
+(pdftex.def)             Requested size: 117.00119pt x 115.7251pt.
+<images/claro.jpg, id=181, 186.6975pt x 183.68625pt>
+File: images/claro.jpg Graphic file (type jpg)
+<use images/claro.jpg>
+Package pdftex.def Info: images/claro.jpg  used on input line 962.
+(pdftex.def)             Requested size: 115.75124pt x 113.88428pt.
+ [31 </home/heitor/Documents/USP/IC/Estudos-Processamento-de-Imagens/Anotações/images/einsteinEscuro.jpg> </home/heitor/Documents/USP/IC/Estudos-Processamento-de-Imagens/Anotações/images/claro.jpg>] (/home/heitor/Documents/USP/IC/Estudos-Processamento-de-Imagens/Anotações/Anotações.aux) ) 
 Here is how much of TeX's memory you used:
- 13924 strings out of 481232
- 278300 string characters out of 5915106
- 561170 words of memory out of 5000000
- 30576 multiletter control sequences out of 15000+600000
- 410401 words of font info for 51 fonts, out of 8000000 for 9000
+ 14505 strings out of 481232
+ 285224 string characters out of 5915106
+ 561903 words of memory out of 5000000
+ 31129 multiletter control sequences out of 15000+600000
+ 412871 words of font info for 63 fonts, out of 8000000 for 9000
  16 hyphenation exceptions out of 8191
- 102i,11n,102p,514b,359s stack positions out of 5000i,500n,10000p,200000b,80000s
- </home/heitor/.texlive2020/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1440.600pk> </home/heitor/.texlive2020/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1200.600pk></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on /home/heitor/Documents/USP/IC/Estudos-Processamento-de-Imagens/Anotações/Anotações.pdf (22 pages, 810350 bytes).
+ 102i,13n,102p,514b,440s stack positions out of 5000i,500n,10000p,200000b,80000s
+ </home/heitor/.texlive2020/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1440.600pk> </home/heitor/.texlive2020/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1200.600pk></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
+Output written on /home/heitor/Documents/USP/IC/Estudos-Processamento-de-Imagens/Anotações/Anotações.pdf (34 pages, 1525205 bytes).
 PDF statistics:
- 170 PDF objects out of 1000 (max. 8388607)
- 99 compressed objects within 1 object stream
+ 230 PDF objects out of 1000 (max. 8388607)
+ 129 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 199 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 259 words of extra memory for PDF output out of 10000 (max. 10000000)
 

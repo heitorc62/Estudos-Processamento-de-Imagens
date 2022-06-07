@@ -49,3 +49,15 @@
 \contentsline {section}{\numberline {19}Introdução a Histogramas}{19}{}%
 \contentsline {subsection}{\numberline {19.1}Histograma de uma Imagem}{19}{}%
 \contentsline {subsection}{\numberline {19.2}Aplicações dos Histogramas}{19}{}%
+\contentsline {section}{\numberline {20}Brilho e Contraste}{20}{}%
+\contentsline {subsection}{\numberline {20.1}Contraste}{20}{}%
+\contentsline {section}{\numberline {21}Transformação em imagens}{21}{}%
+\contentsline {section}{\numberline {22}Deslizamento de Histogramas - Histogram Sliding}{21}{}%
+\contentsline {section}{\numberline {23}Alongamento de Histogramas - Histogram Stretching}{22}{}%
+\contentsline {section}{\numberline {24}Probabilidade para Transformações de Histogramas}{24}{}%
+\contentsline {section}{\numberline {25}Equalização de Histogramas - Histogram Equalization}{27}{}%
+\contentsline {section}{\numberline {26}Transformações de Níveis de Cinza}{29}{}%
+\contentsline {subsection}{\numberline {26.1}Aprimoramento de imagens}{29}{}%
+\contentsline {subsection}{\numberline {26.2}Transformação de Nível de Cinza}{29}{}%
+\contentsline {subsubsection}{\numberline {26.2.1}Transformação Linear}{29}{}%
+\contentsline {subsubsection}{\numberline {26.2.2}Transformação Logarítimica}{30}{}%
