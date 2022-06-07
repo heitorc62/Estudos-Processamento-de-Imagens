@@ -573,7 +573,86 @@ que podem ser exibidas nessa imagem com $bpp = k$ é tal que $2^k$, mas podemos 
 $bpp$ e não pela quantidade de nuances de cinza que esse número produz.
 
 \section{Conceito de Quantização}
+Já sabemos que, no processo de conversão de um sinal analógico para um digital, há os conceitos de amostragem e quantização. Amostragem é 
+feita no domínio do sinal, ou função. Já a quantização, é realizada nos valores que a função pode assumir. Ou seja, na imagem dessa função, feita no eixo 
+$y$. Na realidade, ao quantizar um sinal, estamos digitalizando as amplitudes desse sinal, as particionando. Nesse sentido, podemos interpretar a resolução 
+grayscale de uma imagem como um exemplo de quantização. Ao limitar os valores de cor que a imagem pode assumir, estamos quantizando as amplitudes do sinal.
+Então, observe as diferenças entre Imagens com diferentes níveis de resolução grayscale (quantizações distintas).
+\begin{figure}[!htb]
+	\centering
+	\minipage{0.17\textwidth}
+	  	\includegraphics[width=\linewidth]{images/einstein256.jpg}
+	  	\caption{256 níveis de cinza.}
+	\endminipage\hspace{1cm}
+	\minipage{0.17\textwidth}
+	 	\includegraphics[width=\linewidth]{images/128.jpg}
+	  	\caption{128 níveis de cinza.}
+	\endminipage\hspace{1cm}
+	\minipage{0.17\textwidth}
+		\includegraphics[width=\linewidth]{images/64.jpg}
+		\caption{64 níveis de cinza.}
+  	\endminipage\hspace{1cm}
+  	\minipage{0.17\textwidth}
+  		\includegraphics[width=\linewidth]{images/32.jpg}
+  		\caption{32 níveis de cinza.}
+	\endminipage
+\end{figure}
+\\
+\begin{figure}[!htb]
+	\centering
+	\minipage{0.17\textwidth}
+	  	\includegraphics[width=\linewidth]{images/16.jpg}
+	  	\caption{16 níveis de cinza.}
+	\endminipage\hspace{1cm}
+	\minipage{0.17\textwidth}
+	 	\includegraphics[width=\linewidth]{images/8.jpg}
+	  	\caption{8 níveis de cinza.}
+	\endminipage\hspace{1cm}
+	\minipage{0.17\textwidth}
+		\includegraphics[width=\linewidth]{images/4.jpg}
+		\caption{4 níveis de cinza.}
+  	\endminipage\hspace{1cm}
+  	\minipage{0.17\textwidth}
+  		\includegraphics[width=\linewidth]{images/2.jpg}
+  		\caption{ níveis de cinza.}
+	\endminipage
+\end{figure}
 
+\section{Curvas de Preferência ISO - ISO Preference curves}
+Como podemos observar nas imagens acima, a partir de uma certa quantidade de níveis de cinza, há o aparecimento de linhas na imagem. 
+Tais linhas são chamadas de ``countouring''. Note que quanto mais discretizarmos (maior quantização) a imagem, mais aparecem essas linhas.
+Contudo, esse não é o único fator que influencia no ``countouring''.
+\subsection{Curvas de Isopreferência}
+Em suma, estudos comprovaram que o aparecimento das linhas características do ``countouring'' está também relacionado à quantidade de detalhes presentes 
+na imagem. Isso quer dizer que quanto mais detalhes uma imagem tiver, mais demorará para o efeito do ``countouring'' se tornar evidente.
+
+\section{Conceito de Dithering \textcolor{red}{ACHEI ESSA SEÇÃO CONFUSA}}
+Dithering é uma forma de ruído digital aplicado intensionalmente em um sinal. Nesse sentido, podemos ``permutar'' os pixels de uma imagem com baixos níveis de grayscale 
+utilizando dithering para tornar mais detalhes visíveis nessa imagem.
+\\
+
+Primeiro, devemos trabalhar com limiares --- thresholding --- 
+
+\section{Introdução a Histogramas}
+\subsection{Histograma de uma Imagem}
+O histograma de uma imagem mostra as frequências das intensidades dos pixels. Tomando, novamente, o exemplo de uma imagem grayscale, no eixo $x$, teremos 
+as intensidades (níveis) de cinza presentes na imagem, enquanto no eixo $y$, teremos a frequência de ocorrência dessas intensidades.
+\\
+\begin{figure}[!htb]
+	\centering
+	\minipage{0.30\textwidth}
+	  \includegraphics[width=\linewidth]{images/einsteinNitido.jpg}
+	  \caption{Imagem}
+	\endminipage\hspace{1cm}
+	\minipage{0.30\textwidth}
+	  \includegraphics[scale=0.3]{images/histograma.jpg}
+	  \caption{Histograma da Imagem}
+	\endminipage
+\end{figure}
+\subsection{Aplicações dos Histogramas}
+Uma das principais utilidades dos histogramas é a análise geral de imagens, podemos examinar uma imagem a partir de seu histograma. Além disso, 
+estudar o brilho e contraste da imagem pode ser feito através do histograma. Por fim, há amplos usos em limiar --- thresholding ---, que são utilizados 
+em visão computacional.
 \end{document}
 
 

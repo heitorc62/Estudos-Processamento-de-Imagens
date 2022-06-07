@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Debian) (preloaded format=pdflatex 2021.11.26)  6 JUN 2022 22:02
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Debian) (preloaded format=pdflatex 2021.11.26)  6 JUN 2022 23:46
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -542,20 +542,145 @@ Underfull \hbox (badness 1303) in paragraph at lines 551--551
 \OT1/cmr/m/n/12 com me-nor re-solu^^Xc~ao
  []
 
-[16 </home/heitor/Documents/USP/IC/Estudos-Processamento-de-Imagens/Anotações/images/einsteinNitido.jpg> </home/heitor/Documents/USP/IC/Estudos-Processamento-de-Imagens/Anotações/images/einstein_spatial.jpg>] [17] (/home/heitor/Documents/USP/IC/Estudos-Processamento-de-Imagens/Anotações/Anotações.aux) ) 
+[16 </home/heitor/Documents/USP/IC/Estudos-Processamento-de-Imagens/Anotações/images/einsteinNitido.jpg> </home/heitor/Documents/USP/IC/Estudos-Processamento-de-Imagens/Anotações/images/einstein_spatial.jpg>]
+<images/einstein256.jpg, id=105, 186.6975pt x 182.6825pt>
+File: images/einstein256.jpg Graphic file (type jpg)
+<use images/einstein256.jpg>
+Package pdftex.def Info: images/einstein256.jpg  used on input line 584.
+(pdftex.def)             Requested size: 66.29929pt x 64.87364pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 585--585
+[]\OT1/cmr/m/n/12 Figura 11:
+ []
+
+<images/128.jpg, id=106, 189.70876pt x 182.6825pt>
+File: images/128.jpg Graphic file (type jpg)
+<use images/128.jpg>
+Package pdftex.def Info: images/128.jpg  used on input line 588.
+(pdftex.def)             Requested size: 66.29929pt x 63.84505pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 589--589
+[]\OT1/cmr/m/n/12 Figura 12:
+ []
+
+<images/64.jpg, id=107, 188.705pt x 181.67876pt>
+File: images/64.jpg Graphic file (type jpg)
+<use images/64.jpg>
+Package pdftex.def Info: images/64.jpg  used on input line 592.
+(pdftex.def)             Requested size: 66.29929pt x 63.82968pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 593--593
+[]\OT1/cmr/m/n/12 Figura 13:
+ []
+
+<images/32.jpg, id=108, 189.70876pt x 183.68625pt>
+File: images/32.jpg Graphic file (type jpg)
+<use images/32.jpg>
+Package pdftex.def Info: images/32.jpg  used on input line 596.
+(pdftex.def)             Requested size: 66.29929pt x 64.19585pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 597--597
+[]\OT1/cmr/m/n/12 Figura 14:
+ []
+
+<images/16.jpg, id=109, 183.68625pt x 188.705pt>
+File: images/16.jpg Graphic file (type jpg)
+<use images/16.jpg>
+Package pdftex.def Info: images/16.jpg  used on input line 604.
+(pdftex.def)             Requested size: 66.29929pt x 68.11226pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 605--605
+[]\OT1/cmr/m/n/12 Figura 15:
+ []
+
+<images/8.jpg, id=110, 186.6975pt x 182.6825pt>
+File: images/8.jpg Graphic file (type jpg)
+<use images/8.jpg>
+Package pdftex.def Info: images/8.jpg  used on input line 608.
+(pdftex.def)             Requested size: 66.29929pt x 64.87364pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 609--609
+[]\OT1/cmr/m/n/12 Figura 16:
+ []
+
+
+Underfull \hbox (badness 2913) in paragraph at lines 609--609
+\OT1/cmr/m/n/12 8 n^^S^^Pveis de
+ []
+
+<images/4.jpg, id=111, 187.70125pt x 183.68625pt>
+File: images/4.jpg Graphic file (type jpg)
+<use images/4.jpg>
+Package pdftex.def Info: images/4.jpg  used on input line 612.
+(pdftex.def)             Requested size: 66.29929pt x 64.88254pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 613--613
+[]\OT1/cmr/m/n/12 Figura 17:
+ []
+
+
+Underfull \hbox (badness 2913) in paragraph at lines 613--613
+\OT1/cmr/m/n/12 4 n^^S^^Pveis de
+ []
+
+<images/2.jpg, id=112, 184.69pt x 181.67876pt>
+File: images/2.jpg Graphic file (type jpg)
+<use images/2.jpg>
+Package pdftex.def Info: images/2.jpg  used on input line 616.
+(pdftex.def)             Requested size: 66.29929pt x 65.21855pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 617--617
+[]\OT1/cmr/m/n/12 Figura 18:
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 617--617
+\OT1/cmr/m/n/12 n^^S^^Pveis de
+ []
+
+
+Overfull \hbox (9.29675pt too wide) in paragraph at lines 576--620
+[]\OT1/cmr/m/n/14.4 J^^Sa sa-be-mos que, no pro-cesso de con-vers~ao de um si-nal anal^^Sogico
+ []
+
+[17] [18 </home/heitor/Documents/USP/IC/Estudos-Processamento-de-Imagens/Anotações/images/einstein256.jpg> </home/heitor/Documents/USP/IC/Estudos-Processamento-de-Imagens/Anotações/images/128.jpg> </home/heitor/Documents/USP/IC/Estudos-Processamento-de-Imagens/Anotações/images/64.jpg> </home/heitor/Documents/USP/IC/Estudos-Processamento-de-Imagens/Anotações/images/32.jpg> </home/heitor/Documents/USP/IC/Estudos-Processamento-de-Imagens/Anotações/images/16.jpg> </home/heitor/Documents/USP/IC/Estudos-Processamento-de-Imagens/Anotações/images/8.jpg> </home/heitor/Documents/USP/IC/Estudos-Processamento-de-Imagens/Anotações/images/4.jpg> </home/heitor/Documents/USP/IC/Estudos-Processamento-de-Imagens/Anotações/images/2.jpg>]
+Overfull \hbox (25.58551pt too wide) in paragraph at lines 629--629
+[]\OT1/cmr/bx/n/17.28 Conceito de Dithe-ring []ACHEI ESSA SE[][]AO
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 630--633
+
+ []
+
+File: images/einsteinNitido.jpg Graphic file (type jpg)
+<use images/einsteinNitido.jpg>
+Package pdftex.def Info: images/einsteinNitido.jpg  used on input line 644.
+(pdftex.def)             Requested size: 117.00119pt x 114.48567pt.
+<images/histograma.jpg, id=122, 483.8075pt x 378.41376pt>
+File: images/histograma.jpg Graphic file (type jpg)
+<use images/histograma.jpg>
+Package pdftex.def Info: images/histograma.jpg  used on input line 648.
+(pdftex.def)             Requested size: 145.14337pt x 113.525pt.
+
+Overfull \hbox (28.14218pt too wide) in paragraph at lines 648--649
+[][] 
+ []
+
+[19] [20 </home/heitor/Documents/USP/IC/Estudos-Processamento-de-Imagens/Anotações/images/histograma.jpg>] (/home/heitor/Documents/USP/IC/Estudos-Processamento-de-Imagens/Anotações/Anotações.aux) ) 
 Here is how much of TeX's memory you used:
- 13869 strings out of 481232
- 277392 string characters out of 5915106
+ 13924 strings out of 481232
+ 278300 string characters out of 5915106
  561170 words of memory out of 5000000
- 30530 multiletter control sequences out of 15000+600000
+ 30576 multiletter control sequences out of 15000+600000
  410401 words of font info for 51 fonts, out of 8000000 for 9000
  16 hyphenation exceptions out of 8191
  102i,11n,102p,514b,359s stack positions out of 5000i,500n,10000p,200000b,80000s
  </home/heitor/.texlive2020/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1440.600pk> </home/heitor/.texlive2020/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1200.600pk></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on /home/heitor/Documents/USP/IC/Estudos-Processamento-de-Imagens/Anotações/Anotações.pdf (19 pages, 733259 bytes).
+Output written on /home/heitor/Documents/USP/IC/Estudos-Processamento-de-Imagens/Anotações/Anotações.pdf (22 pages, 810350 bytes).
 PDF statistics:
- 152 PDF objects out of 1000 (max. 8388607)
- 93 compressed objects within 1 object stream
+ 170 PDF objects out of 1000 (max. 8388607)
+ 99 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 154 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 199 words of extra memory for PDF output out of 10000 (max. 10000000)
 
