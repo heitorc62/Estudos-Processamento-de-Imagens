@@ -61,3 +61,26 @@
 \contentsline {subsection}{\numberline {26.2}Transformação de Nível de Cinza}{29}{}%
 \contentsline {subsubsection}{\numberline {26.2.1}Transformação Linear}{29}{}%
 \contentsline {subsubsection}{\numberline {26.2.2}Transformação Logarítimica}{30}{}%
+\contentsline {subsubsection}{\numberline {26.2.3}Transformação Gamma - Power Law - Exponencial}{31}{}%
+\contentsline {section}{\numberline {27}Conceito de Convolução}{32}{}%
+\contentsline {subsection}{\numberline {27.1}Máscara}{32}{}%
+\contentsline {subsubsection}{\numberline {27.1.1}Como efetuar convolução utilizando a máscara}{32}{}%
+\contentsline {subsubsection}{\numberline {27.1.2}Vantagens da Convolução}{34}{}%
+\contentsline {section}{\numberline {28}Conceito de Máscara}{34}{}%
+\contentsline {section}{\numberline {29}Conceito de Blurring}{34}{}%
+\contentsline {section}{\numberline {30}Conceito de bordas - Edges}{36}{}%
+\contentsline {subsection}{\numberline {30.1}Prewitt Operator}{37}{}%
+\contentsline {subsection}{\numberline {30.2}Sobel Operator}{39}{}%
+\contentsline {subsection}{\numberline {30.3}Robinson Compass Masks}{40}{}%
+\contentsline {subsection}{\numberline {30.4}Krisch Compass Masks}{41}{}%
+\contentsline {subsection}{\numberline {30.5}Laplacian Operator}{42}{}%
+\contentsline {section}{\numberline {31}Análise do Frequência de Domínio - Frequency Domain Analysis}{43}{}%
+\contentsline {section}{\numberline {32}Series e Transformadas de Fourier}{44}{}%
+\contentsline {section}{\numberline {33}Series de Fourier}{44}{}%
+\contentsline {section}{\numberline {34}Teorema da Convulução}{45}{}%
+\contentsline {section}{\numberline {35}Filtros Passa Alta e Filtros Passa Baixa em Imagens}{45}{}%
+\contentsline {section}{\numberline {36}Introdução aos Espaços de Cor}{45}{}%
+\contentsline {section}{\numberline {37}Introdução à Compressão de JPEG}{47}{}%
+\contentsline {section}{\numberline {38}Reconhecimento Ótico de Caracteres - OCR}{47}{}%
+\contentsline {section}{\numberline {39}Visão Computacional}{47}{}%
+\contentsline {section}{\numberline {40}Computação Gráfica}{48}{}%

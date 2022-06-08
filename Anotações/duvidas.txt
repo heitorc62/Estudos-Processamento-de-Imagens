@@ -1,0 +1,5 @@
+Elenco aqui as seções dos tutoriais que achei mais confusas e fiquei com dúvidas:
+1- Dithering
+2- K times Zoom (deveria ordenar mais uma vez, na vertical ou não?)
+3- Transformação grayscale Gamma (acho que a fórmula do site está errada)
+4- Convolução, Domínio das Frequências, Transformadas de Fourier e COmpressão JPEG.

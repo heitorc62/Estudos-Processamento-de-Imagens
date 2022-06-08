@@ -4,6 +4,7 @@
 \usepackage[utf8]{inputenc}
 \usepackage[outline]{contour}
 \usepackage[dvipsnames]{xcolor}
+\usepackage{mathtools} % loads amsmath
 \usepackage{amsmath}
 \usepackage{amssymb}
 \usepackage{indentfirst}
@@ -770,7 +771,7 @@ comentar sobre esses dois conceitos de probabilidade.
 	\end{center}
 
 
-		De maneira análoga, podemos calcular essa função de probabilidade apartir do histograma de uma imagem. Considere o seguinte histograma:
+		De maneira análoga, podemos calcular essa função de probabilidade a partir do histograma de uma imagem. Considere o seguinte histograma:
 \begin{figure}[!htbp]
 	\centering
 	\includegraphics[scale=0.5]{images/hist1.jpg}
@@ -818,7 +819,7 @@ Usaremos essa técnica de equalização de histogramas para aumentar o contraste
 o contraste da imagem pode acabar diminuindo.
 \\
 
-Desse modo, vamos explicar apartir de um exemplo. Considere que nossa imagem possua os seguintes valores de cinza e as respectivas funções acumuladas 
+Desse modo, vamos explicar a partir de um exemplo. Considere que nossa imagem possua os seguintes valores de cinza e as respectivas funções acumuladas 
 de probabilidade:
 
 \begin{table}[!htbp]
@@ -963,6 +964,753 @@ constante $c$. Observe que somamos $1$, para não termos problemas em relação 
 	  \caption{Imagem de saída}
 	\endminipage
 \end{figure}
+
+\subsubsection{Transformação Gamma - Power Law - Exponencial}
+Nesse caso, também há a transformações de exponenciação e de radiciação. Essa transformação é representada a partir da fórmula:
+\\
+\large{\textcolor{red}{AQUI A TRANSFORMAÇÃO GAMMA É \\ $g(f(x,y)) = c \cdot f(x,y)^{\gamma}$ OU $g(f(x,y)) = c \cdot f(x,y)^{\dfrac{1}{\gamma}}$ ???}}
+\begin{center}
+	$g(f(x,y)) = c \cdot f(x,y)^{\dfrac{1}{\gamma}}$
+\end{center}
+Observe exemplos dessas transformações:
+\begin{figure}[!htb]
+	\centering
+	\minipage{0.25\textwidth}
+	  	\includegraphics[width=\linewidth]{images/einsteinEscuro.jpg}
+	  	\caption{$\gamma = 10$}
+	\endminipage\hspace{1cm}
+	\minipage{0.25\textwidth}
+		\includegraphics[width=\linewidth]{images/einsteinEscuro.jpg}
+		\caption{$\gamma = 8$}
+  	\endminipage\hspace{1cm}
+	\minipage{0.25\textwidth}
+	  	\includegraphics[width=\linewidth]{images/claro.jpg}
+	  	\caption{$\gamma = 6$}
+	\endminipage
+\end{figure}
+
+\section{Conceito de Convolução}
+Convolução é uma tereira maneira de manipular imagens. Já abordamos transformações em histogramas e funções de transformação grascale. Matemáticamente, 
+convolução pode ser representado como:
+\begin{center}
+	$g(x, y) = h(x,y) * f(x,y)$
+\end{center}
+Podemos dizer que a ``máscara'' envolveu a imagem.
+Por outro, lado, devido à comutatividade dessa operação, podemos escrever:
+\begin{center}
+	$g(x, y) = f(x,y) * h(x,y)$
+\end{center}
+Que pode se explicado dizendo que a imagem foi envolvida pela ``máscara''. $h(x,y)$ é a máscara, ou filtro.
+
+\subsection{Máscara}
+A máscara pode ser interpretada, também, como um sinal. Representada através de uma matriz bidimensional, a máscara deve ser quadradada e ter dimensões 
+ímpares.
+
+\subsubsection{Como efetuar convolução utilizando a máscara}
+Seja a seguinte matriz uma representação de nossa máscara:
+\begin{center}
+	$
+	\begin{bmatrix}
+		1 & 2 & 3 \\
+		4 & 5 & 6 \\
+		7 & 8 & 9 \\
+	\end{bmatrix}	
+	$
+\end{center}
+Primeiro, devemos espelhar a matriz horizontalmente:
+\begin{center}
+	$
+	\begin{bmatrix}
+		3 & 2 & 1 \\
+		6 & 5 & 4 \\
+		9 & 8 & 7 \\
+	\end{bmatrix}	
+	$
+\end{center}
+Segundo, devemos espelhar a matriz verticalmente:
+\begin{center}
+	$
+	\begin{bmatrix}
+		9 & 8 & 7 \\
+		6 & 5 & 4 \\
+		3 & 2 & 1 \\
+	\end{bmatrix}	
+	$
+\end{center}
+Agora, vamos considerar que nossa imagem seja representada pela seguinte matriz:
+\begin{center}
+	$
+	\begin{bmatrix}
+		2   & 4   & 6 \\
+		8   & 10  & 12 \\
+		14  & 16  & 18 \\
+	\end{bmatrix}	
+	$
+\end{center}
+Por fim, para efetuar a convolução, devemos pegar a máscara, guiada pelo seu elemento central, e ``colocá-la'' sobre cada elemento da imagem. 
+Ao fazer isso, devemos multiplicar os elementos que se sobrepõe e efetuar a soma dessas multiplicações. Depois disso, o resultado obtido deve ser 
+colocado na posição que estamos analisando. Por exemplo: Ao colocarmos a máscara sobre o elemento de índice $(0, 0)$ da 
+imagem --- nesse exemplo ---, os elementos que se sobreporiam 
+seriam os seguintes: $5$ sobre o $2$, $4$ sobre $4$, $1$ sobre o $10$ e $2$ sobre o $8$. Efetuando as multiplicações e as somas teríamos: 
+$5 \cdot 2 + 4 \cdot 4 + 1 \cdot 10 + 2 \cdot 8 = 10 + 16 + 10 + 16 = 52$. O valor $52$ deve ser colocado na posição do índice em questão.
+
+\subsubsection{Vantagens da Convolução}
+Com convulução podemos realizar feitos que não são possíveis com os demais métodos comentados. Por exemplo:
+\begin{itemize}
+	\item Redução de ruídos
+ 	\item Detecção de bordas
+ 	\item blurring
+ 	\item Sharpening
+\end{itemize}
+
+\section{Conceito de Máscara}
+Uma máscara nada mais é que um filtro que é aplicado na imagem, de ponto a ponto, como mostrado na seção anterior. A cada ponto, a resposta do filtro 
+é calculada a partir de uma relação pré-definida. De forma geral, há dois tipos principais de filtros: filtros lineares e filtros de domínio de frequência 
+--- frequency domain filters. Os usos mais comuns dos filtros são: blurring, sharpening, detecção de bordas e redução de ruídos.
+\\
+
+Redução de ruído e blurring estão relacionados. Para ``borrar'' uma imagem, usamos máscaras para fazer com que, haja uma transição suave entre pixels de 
+valores diferentes. Desse modo, a redução de ruído é feita utilizando blurring. Além disso, as máscaras são usadas para detectar e deixar as bordas mais 
+``afiadas'' (sharpening). Observe uma imagem após a plicação desse efeito:
+
+\begin{figure}[!htbp]
+	\centering
+	\minipage{0.30\textwidth}
+	  \includegraphics[width=\linewidth]{images/einstein256.jpg}
+	  \caption{Imagem de entrada}
+	\endminipage\hspace{1cm}
+	\minipage{0.30\textwidth}
+	  \includegraphics[scale=0.62]{images/bordas.jpg}
+	  \caption{Imagem de saída}
+	\endminipage
+\end{figure}
+
+\section{Conceito de Blurring}
+Para borrar ou esfumaçar uma imagem, comumente utilizamos os seguintes tipos de filtros: filtro de média, filtro de média ponderada e filtro gaussiano. 
+Focaremos nos dois primeiros.
+\\
+\begin{enumerate}
+	\item Filtro de Média:
+	\\
+	Aqui, a ideia é realizar fazer com que o elemento sobre o qual aplicaremos o filtro tenha o valor da média aritmética de sua vizinhança.
+	para fazer isso, produzimos uma máscara de dimensões $n \times n$ com $n$ ímpar tal que, todos os elementos sejam iguais e sua soma seja igual à 
+	$1$. Dessa maneira, ao efetuarmos a convolução, digamos em um pixel no meio da imagem, esse pixel será equivalente ao 
+	valor da média aritmética dos $n^2$ elementos mais próximos a ele (incluindo ele próprio). Observe algumas imagens que foram submetidas à esse processo:
+	\\
+	\begin{figure}[!htb]
+		\centering
+		\includegraphics[scale=0.62]{images/einstein256.jpg}
+		\caption{Imagem original}
+	\end{figure}
+	\begin{figure}[!htb]
+		\centering
+		\minipage{0.30\textwidth}
+		  \includegraphics[width=\linewidth]{images/borrado5.jpg}
+		  \caption{Filtro $5 \times 5$}
+		\endminipage\hspace{1cm}
+		\minipage{0.30\textwidth}
+		  \includegraphics[scale=0.62]{images/borrado7.jpg}
+		  \caption{Filtro $7 \times 7$}
+		\endminipage
+	\end{figure}
+
+	\begin{figure}[!htb]
+		\centering
+		\minipage{0.30\textwidth}
+		  \includegraphics[width=\linewidth]{images/borrado9.jpg}
+		  \caption{Filtro $9 \times 9$}
+		\endminipage\hspace{1cm}
+		\minipage{0.30\textwidth}
+		  \includegraphics[width=\linewidth]{images/borrado11.jpg}
+		  \caption{Filtro $11 \times 11$}
+		\endminipage
+	\end{figure}
+
+	\item Filtro de Média Ponderada:
+ 	\\
+	Nesse caso, a ideia é parecida com a mostrada no ítem anterior, contudo, teremos um peso maior associado aos elementos centrais, certificando que 
+	as propriedades da soma dos elementos na matriz ser $1$, $n$ deve ser ímpar e o peso do elemento central deve ser o maior de todos.
+\end{enumerate}
+
+
+\section{Conceito de bordas - Edges}
+Podemos definir ``bordas'' como mudanças bruscas em valores de pixels adjacentes em uma imagem. É interassante ressaltar que estudar como detectar e aprimorar 
+as bordas de uma imagem é importante, pois a maior parte da informação das imagens está presente em suas bordas. Então, fazendo isso, podemos fazer a 
+imagem ficar mais nítida. Observe um exemplo dessa transformação:
+
+\begin{figure}[!htb]
+	\centering
+	\minipage{0.30\textwidth}
+	  \includegraphics[width=\linewidth]{images/einstein256.jpg}
+	  \caption{Imagem original}
+	\endminipage\hspace{1cm}
+	\minipage{0.30\textwidth}
+	  \includegraphics[width=\linewidth]{images/nitido.jpg}
+	  \caption{Imagem com o filtro}
+	\endminipage
+\end{figure}
+
+Nesse sentido, podemos ressaltar os seguintes tipos de bordas: horizontais, verticais e diagonais.
+\\
+
+Para fazer isso, são utilizados alguns tipos de filtro:
+\begin{itemize}
+	\item Prewitt Operator
+ 	\item Sobel Operator
+  	\item Robinson Compass Masks
+   	\item Krisch Compass Masks
+    \item Laplacian Operator 
+\end{itemize}
+
+\subsection{Prewitt Operator}
+Essa maneira de encontrar bordas em uma imagem é capaz de detectar bordas horizontais e verticais. Essa, assim como as outras máscaras utilizadas para encontrar 
+bordas em imagens, tem seu funcionamento baseado em diferenciação. Nesse sentido, as ``máscaras derivativas'' devem seguir as seguintes propriedades: 
+Valores de sinais opostos devem estar presentes na máscara, a soma dos valores deve ser igual a zero e quanto mais peso, mais detecção.
+\\
+
+Primeiramente, vamos observar as máscaras que esse método nos fornece. Para detecção na direção vertical, a máscara é a seguinte:
+\begin{center}
+	$
+	\begin{bmatrix}
+		-1 & 0 & 1 \\
+		-1 & 0 & 1 \\
+		-1 & 0 & 1 \\
+	\end{bmatrix}
+	$
+\end{center}
+Para entender o funcionamento dessa máscara, pensemos em um exemplo em que a máscara será aplicada no ponto $(x_i, y_j)$ da seguinte imagem/matriz:
+\begin{center}
+	$
+	\begin{bmatrix}
+		f(x_{i-1}, y_{j-1}) & f(x_{i-1}, y_j) & f(x_{i-1}, y_{j+1}) \\
+		f(x_i, y_{j-1})     & f(x_i, y_j)     & f(x_i, y{j+1})      \\
+		f(x_{i+1}, y_{j-1}) & f(x_{i+1}, y_j) & f(x_{i+1}, y_{j+1}) \\
+	\end{bmatrix}
+	$
+\end{center}
+Ao aplicarmos essa máscara no ponto referido, $f(x_i, y_j)$ assumirá o valor de:
+\begin{center}
+\small{$\left(f(x_i, y{j+1}) - f(x_i, y_{j-1})\right) + \left(f(x_{i-1}, y_{j+1}) - f(x_{i-1}, y_{j-1})\right) + \left(f(x_{i+1}, y_{j+1}) - f(x_{i+1}, y_{j-1})\right)$}
+\end{center}
+Desse modo, como o valor em um pixel será a soma das diferenças (em relação à vertical) dos pixels ao seu redor, se essas diferenças forem grandes, o valor do pixel 
+será alto, caso contrário, esse valor será baixo. Cumprindo assim, o papel de aumentar o contraste nas bordas verticais.
+\\
+
+O mesmo princípio é utilizado na máscara para detectar as bordas horizontais. A máscara utilizada é:
+\begin{center}
+	$
+	\begin{bmatrix}
+	   -1 & -1  & -1 \\
+		0 &  0  &  0 \\
+		1 &  1  &  1 \\
+	\end{bmatrix}
+	$
+\end{center}
+Observe esse método funcionando:
+\begin{figure}[!htb]
+	\centering
+	\minipage{0.25\textwidth}
+	  	\includegraphics[width=\linewidth]{images/einstein256.jpg}
+	  	\caption{Imagem original}
+	\endminipage\hspace{1cm}
+	\minipage{0.25\textwidth}
+		\includegraphics[width=\linewidth]{images/prewittvert.jpg}
+		\caption{Detecção de bordas verticais}
+  	\endminipage\hspace{1cm}
+	\minipage{0.25\textwidth}
+	  	\includegraphics[width=\linewidth]{images/prewitthori.jpg}
+	  	\caption{Detecção de bordas horizontais}
+	\endminipage
+\end{figure}
+\subsection{Sobel Operator}
+Esse método de realizar detecção de bordas é extremamente similar ao de Prewitt. De maneira análoga, ele é capaz de identificar bordas verticais e horizontais. 
+A diferença entre eles é a atribuição de pesos diferentes nesse caso. Contanto que a máscara formada não viole as propriedades das máscaras derivativas.
+Um exemplo desse tipo de máscara é:
+\\
+\begin{center}
+	Vertical:
+	$
+	\begin{bmatrix}
+		-1 & 0 & 1 \\
+		-2 & 0 & 2 \\
+		-1 & 0 & 1 \\
+	\end{bmatrix}
+	$;
+	Horizontal:
+	$
+	\begin{bmatrix}
+	   -1 & -2  & -1 \\
+		0 &  0  &  0 \\
+		1 &  2  &  1 \\
+	\end{bmatrix}
+	$
+\end{center}
+Observe ess método em funcionamento:
+\begin{figure}[!htb]
+	\centering
+	\minipage{0.25\textwidth}
+	  	\includegraphics[width=\linewidth]{images/einstein256.jpg}
+	  	\caption{Imagem original}
+	\endminipage\hspace{1cm}
+	\minipage{0.25\textwidth}
+		\includegraphics[width=\linewidth]{images/sobelvert.jpg}
+		\caption{Detecção de bordas verticais}
+  	\endminipage\hspace{1cm}
+	\minipage{0.25\textwidth}
+	  	\includegraphics[width=\linewidth]{images/sobelhori.jpg}
+	  	\caption{Detecção de bordas horizontais}
+	\endminipage
+\end{figure}
+\subsection{Robinson Compass Masks}
+Tratando de mais um tipo de máscara derivativa para detectar bordas de imagens, podemos identificar esta como máscara de direção. Isso ocorre pois 
+a ideia desta máscara é utilizar uma máscar como as mostradas anteriormente e, simplesmente, rotacioná-la nas $8$ direções de uma bússola. Para fazer isso, 
+podemos utilizar qualquer máscara derivativa, observe:
+\begin{figure}[!htb]
+	\begin{minipage}{.23\linewidth}
+	  \centering
+	  \[\left[\begin{array}{ccc}
+		-1 & 0 & 1 \\
+		-2 & 0 & 2 \\
+		-1 & 0 & 1
+	  \end{array}\right]\]
+	  Máscara de direção Norte
+	\end{minipage}%
+	\begin{minipage}{.23\linewidth}
+	  \centering
+	  \[\left[\begin{array}{ccc}
+		 0 & 1  & 2 \\
+		-1 & 0  & 1 \\
+		-2 & -1 & 0
+	  \end{array}\right]\]
+	  Máscara de direção Noroeste
+	\end{minipage}
+	\begin{minipage}{.23\linewidth}
+		\centering
+		\[\left[\begin{array}{ccc}
+		   1 &  2  &  1 \\
+		   0 &  0  &  0 \\
+		  -1 & -2  & -1
+		\end{array}\right]\]
+		Máscara de direção Oeste
+	  \end{minipage}
+	  \begin{minipage}{.23\linewidth}
+		\centering
+		\[\left[\begin{array}{ccc}
+		   2 &   1   &   0 \\
+		   1 &   0   &  -1 \\
+		   0 &  -1   &  -2
+		\end{array}\right]\]
+		Máscara de direção Sudoeste
+	  \end{minipage}
+\end{figure}
+
+\begin{figure}[!htb]
+	\begin{minipage}{.23\linewidth}
+	  \centering
+	  \[\left[\begin{array}{ccc}
+		1 & 0 & -1 \\
+		2 & 0 & -2 \\
+		1 & 0 & -1
+	  \end{array}\right]\]
+	  Máscara de direção Sul
+	\end{minipage}%
+	\begin{minipage}{.23\linewidth}
+	  \centering
+	  \[\left[\begin{array}{ccc}
+		0 & -1  & -2 \\
+		1 &  0  & -1 \\
+		2 &  1  &  0
+	  \end{array}\right]\]
+	  Máscara de direção Sudeste
+	\end{minipage}
+	\begin{minipage}{.23\linewidth}
+		\centering
+		\[\left[\begin{array}{ccc}
+		  -1 &  -2  & -1 \\
+		   0 &   0  &  0 \\
+		   1 &   2  &  1
+		\end{array}\right]\]
+		Máscara de direção Leste
+	  \end{minipage}
+	  \begin{minipage}{.23\linewidth}
+		\centering
+		$
+		\begin{bmatrix*}[l]
+		             -2 &            -1   & \phantom{-}  0 \\
+		             -1 &  \phantom{-}0   & \phantom{-}  1 \\
+		   \phantom{-}0 &  \phantom{-}1   & \phantom{-}  2
+		\end{bmatrix*}
+		$
+		Máscara de direção Nordeste
+	  \end{minipage}
+  \end{figure}
+Disso, temos os seguintes resultados:
+\begin{figure}[!htb]
+	\centering
+	\minipage{0.17\textwidth}
+	  	\includegraphics[width=\linewidth]{images/robinson1.jpg}
+	  	\caption{Direção Norte}
+	\endminipage\hspace{1cm}
+	\minipage{0.17\textwidth}
+	 	\includegraphics[width=\linewidth]{images/robinson2.jpg}
+	  	\caption{Direção Noroeste}
+	\endminipage\hspace{1cm}
+	\minipage{0.17\textwidth}
+		\includegraphics[width=\linewidth]{images/robinson3.jpg}
+		\caption{Direção Oeste}
+  	\endminipage\hspace{1cm}
+  	\minipage{0.17\textwidth}
+  		\includegraphics[width=\linewidth]{images/robinson4.jpg}
+  		\caption{Direção Sudoeste}
+	\endminipage
+\end{figure}
+\begin{figure}[!htb]
+	\centering
+	\minipage{0.17\textwidth}
+	  	\includegraphics[width=\linewidth]{images/robinson5.jpg}
+	  	\caption{Direção Sul}
+	\endminipage\hspace{1cm}
+	\minipage{0.17\textwidth}
+	 	\includegraphics[width=\linewidth]{images/robinson6.jpg}
+	  	\caption{Direção Sudeste}
+	\endminipage\hspace{1cm}
+	\minipage{0.17\textwidth}
+		\includegraphics[width=\linewidth]{images/robinson7.jpg}
+		\caption{Direção Leste}
+  	\endminipage\hspace{1cm}
+  	\minipage{0.17\textwidth}
+  		\includegraphics[width=\linewidth]{images/robinson8.jpg}
+  		\caption{Direção Nordeste}
+	\endminipage
+\end{figure}
+\subsection{Krisch Compass Masks}
+Esse método é muito similar ao de Robinson. A diferença, é que já possuímos valores dá máscara que será rotacionada:
+
+\begin{figure}[!htb]
+	\begin{minipage}{.23\linewidth}
+	  \centering
+	  \[\left[\begin{array}{ccc}
+		-3 & -3 & 5 \\
+		-3 &  0 & 5 \\
+		-3 & -3 & 5
+	  \end{array}\right]\]
+	  Máscara de direção Norte
+	\end{minipage}%
+	\begin{minipage}{.23\linewidth}
+	  \centering
+	  \[\left[\begin{array}{ccc}
+		-3 &  5  &  5 \\
+		-3 &  0  &  5 \\
+		-3 & -3  & -3
+	  \end{array}\right]\]
+	  Máscara de direção Noroeste
+	\end{minipage}
+	\begin{minipage}{.23\linewidth}
+		\centering
+		\[\left[\begin{array}{ccc}
+		   5 &  5  &  5 \\
+		  -3 &  0  & -3 \\
+		  -3 & -3  & -3
+		\end{array}\right]\]
+		Máscara de direção Oeste
+	  \end{minipage}
+	  \begin{minipage}{.23\linewidth}
+		\centering
+		\[\left[\begin{array}{ccc}
+		   5 &   5   &  -3 \\
+		   5 &   0   &  -3 \\
+		  -3 &  -3   &  -3
+		\end{array}\right]\]
+		Máscara de direção Sudoeste
+	  \end{minipage}
+\end{figure}
+
+\begin{figure}[!htb]
+	\begin{minipage}{.23\linewidth}
+	  \centering
+	  \[\left[\begin{array}{ccc}
+		5 &  -3 &  -3 \\
+		5 &   0 &  -3 \\
+		5 &  -3 &  -3
+	  \end{array}\right]\]
+	  Máscara de direção Sul
+	\end{minipage}%
+	\begin{minipage}{.23\linewidth}
+	  \centering
+	  \[\left[\begin{array}{ccc}
+	   -3 & -3  & -3 \\
+		5 &  0  & -3 \\
+		5 &  5  & -3
+	  \end{array}\right]\]
+	  Máscara de direção Sudeste
+	\end{minipage}
+	\begin{minipage}{.23\linewidth}
+		\centering
+		\[\left[\begin{array}{ccc}
+		  -3 &  -3  & -3 \\
+		  -3 &   0  & -3 \\
+		   5 &   5  &  5
+		\end{array}\right]\]
+		Máscara de direção Leste
+	  \end{minipage}
+	  \begin{minipage}{.23\linewidth}
+		\centering
+		$
+		\begin{bmatrix*}[l]
+		             -3 &            -3   &             -3 \\
+		             -3 &  \phantom{-}0   & \phantom{-}  5 \\
+		             -3 &  \phantom{-}5   & \phantom{-}  5
+		\end{bmatrix*}
+		$
+		Máscara de direção Nordeste
+	  \end{minipage}
+  \end{figure}
+  Observe os resultados em uma imagem real:
+  \begin{figure}[!htbp]
+	\centering
+	\minipage{0.17\textwidth}
+	  	\includegraphics[width=\linewidth]{images/kirsch2.jpg}
+	  	\caption{Direção Norte}
+	\endminipage\hspace{1cm}
+	\minipage{0.17\textwidth}
+	 	\includegraphics[width=\linewidth]{images/kirsch3.jpg}
+	  	\caption{Direção Noroeste}
+	\endminipage\hspace{1cm}
+	\minipage{0.17\textwidth}
+		\includegraphics[width=\linewidth]{images/kirsch4.jpg}
+		\caption{Direção Oeste}
+  	\endminipage\hspace{1cm}
+  	\minipage{0.17\textwidth}
+  		\includegraphics[width=\linewidth]{images/kirsch5.jpg}
+  		\caption{Direção Sudoeste}
+	\endminipage
+\end{figure}
+\begin{figure}[!htbp]
+	\centering
+	\minipage{0.17\textwidth}
+	  	\includegraphics[width=\linewidth]{images/kirsch6.jpg}
+	  	\caption{Direção Sul}
+	\endminipage\hspace{1cm}
+	\minipage{0.17\textwidth}
+	 	\includegraphics[width=\linewidth]{images/kirsch7.jpg}
+	  	\caption{Direção Sudeste}
+	\endminipage\hspace{1cm}
+	\minipage{0.17\textwidth}
+		\includegraphics[width=\linewidth]{images/kirsch8.jpg}
+		\caption{Direção Leste}
+  	\endminipage\hspace{1cm}
+  	\minipage{0.17\textwidth}
+  		\includegraphics[width=\linewidth]{images/kirsch9.jpg}
+  		\caption{Direção Nordeste}
+	\endminipage
+\end{figure}
+\vspace{3cm}
+\subsection{Laplacian Operator}
+Por fim, temos o método de Laplace para encontrar bordas de imagens. Diferentemente dos outros, que eram métodos que se baseavam em primeiras derivadas, 
+este utiliza uma máscara derivativa de segunda ordem. Nesse sentido, temos somente dois tipos de máscaras de Laplace: Positiva (detecta bordas externas) e 
+Negativa (detecta bordas internas).
+Primeiro, observe essas duas máscaras de Laplace:
+\begin{center}
+	Positiva:
+	$
+	\begin{bmatrix}
+		0 &  1  & 0 \\
+		1 & -4 & 1 \\
+		0 &  1  & 0 \\
+	\end{bmatrix}
+	$;
+	Negativa:
+	$
+	\begin{bmatrix}
+	    0 &  -1  &   0 \\
+	   -1 &   4  &  -1 \\
+		0 &  -1  &   0 \\
+	\end{bmatrix}
+	$
+\end{center}
+Um detalhe importante, é que, para obter o resultado esperado, não basta realizar a convolução na imagem utilizando essa máscara. Na realidade, 
+se aplicarmos a máscara positiva em uma imagem, teremos de subtrair a imagem resultante da imagem original. Já se aplicarmos a máscara negativa, 
+teremos de adicionar a imagem resultante à imagem original.
+
+Observe os resultados:
+\begin{figure}[!htb]
+	\centering
+	\minipage{0.26\textwidth}
+	  	\includegraphics[width=\linewidth]{images/einstein256.jpg}
+	  	\caption{Imagem original}
+	\endminipage\hspace{1cm}
+	\minipage{0.25\textwidth}
+		\includegraphics[width=\linewidth]{images/laplacian1.jpg}
+		\caption{Detecção de bordas externas}
+  	\endminipage\hspace{1cm}
+	\minipage{0.25\textwidth}
+	  	\includegraphics[width=\linewidth]{images/laplacian2.jpg}
+	  	\caption{Detecção de bordas internas}
+	\endminipage
+\end{figure}
+\section{Análise do Frequência de Domínio - Frequency Domain Analysis}
+Até agora, analisamos os sinais obtidos em respeito do tempo ou do espaço. Ou seja, geralmente, o tempo ou a posição são as variáveis independentes. 
+Nesse caso, a frequência se torna o domínio da função. Agora lidaremos com a medida de mudança de valores dos pixels. Nesse sentido, 
+o processo de transformação na imagem segue os seguintes passos:
+\begin{itemize}
+	\item Recebemos uma imagem como entrada.
+ 	\item Convertemos essa imagem para sua distribuição de frequências.
+  	\item Processamos essa distribuição.
+   	\item Convertemos a nova distribuição em uma nova imagem.
+    \item Entregamos a imagem de saída.
+\end{itemize}
+
+\textcolor{red}{\large{DIFÍCIL NÃO ENTENDI AS APLICAÇÕES E ACHEI MAL EXPLICADO}
+\section{Series e Transformadas de Fourier}
+\section{Series de Fourier}
+A ideia das series de Fourier é simplesmente que um sinal pode ser decomposto como uma soma infinita de senos e cossenos multiplicados por constantes.
+Assim, ao tratarmos sobre Transformadas de Fourier desejamos decompôr o sinal (imagem) em senos e cossenos, e a saída dessa transformada é a representação 
+da imagem cujo domínio são as frequências. Faremos uma breve explicação sobre transformadas de Fourier discretas (DFT) --- a aplicação em imagens digitais, 
+devido à quantização e amostragem.
+\\
+Assim, o número de frequências corresponderá ao número de pixels. Desse modo, para uma imagem quadrada $N \times N$, a transformada discreta de Fourier, 
+que converte uma imagem para a sua representação que possui frequência como domínio, é dada por:
+\begin{center}
+	\[F(u,v) = \dfrac{1}{N^2} \sum_{x = 0}^{N-1} \sum_{y=0}^{N-1} f(x,y)e^{-j2\pi\left(\dfrac{ux}{N} + \dfrac{vy}{N}\right)}\]
+\end{center}
+A transformada inversa de Fourier, que converte a imagem à sua forma original é dada por:
+\begin{center}
+	\[f(x,y) = \sum_{x = 0}^{N-1} \sum_{y=0}^{N-1} F(u,v)e^{j2\pi\left(\dfrac{ux}{N} + \dfrac{vy}{N}\right)}\]
+\end{center}
+}
+\textcolor{red}{\large{ACHEI MAL EXPLICADO}
+\section{Teorema da Convulução}
+O teorema da convulução serve para relacionar uma imagem à sua representação no domínio das frequências. Observe a representação gráfica dessas duas 
+interpretações de uma imagem:}
+\begin{figure}[!htb]
+	\centering
+	\minipage{0.30\textwidth}
+	  \includegraphics[width=\linewidth]{images/einstein256.jpg}
+	  \caption{Imagem original}
+	\endminipage\hspace{1cm}
+	\minipage{0.30\textwidth}
+	  \includegraphics[width=\linewidth]{images/freq.jpg}
+	  \caption{Imagem com o filtro}
+	\endminipage
+\end{figure}
+
+\textcolor{red}{
+O Teorema da Convolução pode ser representado como:
+\begin{center}
+ $f(x,y) * h(x,y) \Leftrightarrow F(u,v)H(u,v)$
+ \\
+ $f(x,y)h(x,y) \Leftrightarrow F(u,v)*H(u,v)$
+ \\
+ $h(x,y) \Leftrightarrow H(u,v)$
+\end{center}
+Ou seja, realizar convolução tendo o espaço como domínio é equivalente à filtrar tendo as frequências como domínio, e vice-versa.
+}
+\textcolor{red}{
+\section{Filtros Passa Alta e Filtros Passa Baixa em Imagens}}
+
+
+\section{Introdução aos Espaços de Cor}
+Alguns dos padrões de cores utilizados atualmente são:
+\begin{itemize}
+	\item RGB
+ \item CMYK
+ \item YUV
+ \item YIQ
+ \item YCbCr
+\end{itemize}
+
+Sobre RGB, sabemos que é um modelo de cor extremamente utilizado. A representação das imagens utilzando esse formato passa a consistir em uma matriz 
+3D, em que, cada pixel possui $3$ valores --- R, G e B --- , ou, também podemos interpretar como $3$ matrizes distintas.
+
+No modelo CMYK, já foi abordado que podemos tratar, separadamente CMY e K, e que esse é um padrão comumente utilzado em impressoras. Para converter RGB 
+para CMY, fazemos: 
+\begin{center}
+	$
+	\begin{bmatrix}
+		C \\
+		M \\
+		Y
+	\end{bmatrix}
+	= 
+	\begin{bmatrix}
+		2^{bpp} - 1 \\
+		2^{bpp} - 1 \\
+		2^{bpp} - 1
+	\end{bmatrix}
+	- 
+	\begin{bmatrix}
+		R \\
+		G \\
+		B
+	\end{bmatrix}
+	$
+\end{center}
+Sobre YUV, podemos dizer que é utilizado nos seguintes padrões de cor:
+\begin{itemize}
+	\item NTSC (National Television System Committee)
+ 	\item PAL (Phase Alternating Line)
+ 	\item SECAM (Sequential couleur a amemoire, French for “sequential color with memory)
+\end{itemize}
+Já em relação ao YCbCr, é interessante ressaltar que é utilizado, principalmente, na compressão de JPEG e MPEG.
+
+\textcolor{red}{
+\section{Introdução à Compressão de JPEG}}
+
+\section{Reconhecimento Ótico de Caracteres - OCR}
+OCR consiste na conversão de textos (manuscritos, escaneados, fotografados) para textos compreensíveis para o computador. OCR revolucionou os mais 
+diversos tipos de indústrias ao redor do mundo, principalmente na qeustão de documentos. Entre diversas aplicações importantes dessa tecnologia, 
+podemos ressaltar as seguintes:
+\begin{itemize}
+	\item Bancos (principalmente em relação à cheques)
+ \item Auxílio à pessoas com deficiências visuais
+ \\
+ Com OCR, existe a possibilidade de que o computador efetue leitura convencional (sem ser braile) para essas pessoas.
+
+ \item Vendas --- Recinhecimento de caracteres em códigos de barra
+\end{itemize}
+
+\section{Visão Computacional}
+Visão Computacional busca replicar a visão humana utilizando computadores. Há uma hierarquia no estudo de visão computacional:
+\begin{itemize}
+	\item Baixo nível:
+	\\
+	Inclui processamento da imagem para futura extração
+	\item Nível Intermediário:
+ 	\\
+	Inclui econhecimento de objetos e interpretação de cenas
+	\item Nível alto:
+ 	\\
+	Inclui descrição conceitual de cenas.
+\end{itemize}
+Alguns dos incontáveis exemplos de aplicação dessa área de estudo são:
+\begin{itemize}
+	\item Robótica:
+ 	\\
+	Carros inteligentes que desviam de objetos, interação entre robôs e humanos, movimentação de robôs utilizando visão computacional e inteligência 
+	artificial.
+	\item Medicina:
+	\\
+	Classificação de doenças usando imagens médicas, cirurgias guiadas por robôs, construção de representação de órgãos para realizar exames.
+	\item Indústria:
+	\\
+	Reconhecimento de padrões como OCR, ordenação de objetos utilizando visão computacional, interpretação de documentos.
+\end{itemize}
+
+
+
+\section{Computação Gráfica}
+Esse tipo tipo de computação foca na criação, manipulação e renderização de objetos e suas imagens relacionadas. Depois do crescimento da 
+indústria dos vídeo games, essa área se expandiu consideravelmente. Nesse sentido, as tarefas relacionadas à ela são realizadas, geralmente, com 
+o auxílio de hardware e software especializados. Um exemplo claro disso são as poderosíssimas placas de vídeo que surgem ano após ano.
+Alguns exemplo de atuação dessas tecnologias são:
+\begin{itemize}
+	\item Design
+ 	\\ Utilizado para fazer modelos 3D e realistas de edifícios, carros, aviões, etc.
+ 	\item Animação 3D e Vídeo games
+ 	\item Educação
+ 	\\
+ Utilizado para gerar modelos de corpos para auxiliar no estudo da medicina, por exemplo. Ou simulações para pilotos de avião.
+\end{itemize}
 
 \end{document}
 
