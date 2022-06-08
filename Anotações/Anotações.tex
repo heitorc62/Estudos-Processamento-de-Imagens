@@ -7,6 +7,7 @@
 \usepackage{mathtools} % loads amsmath
 \usepackage{amsmath}
 \usepackage{amssymb}
+\usepackage[hidelinks]{hyperref}
 \usepackage{indentfirst}
 \usepackage{graphicx}
 \setlength{\jot}{8pt}
@@ -459,7 +460,7 @@ A imagem não fica com um aspecto borrado.
 Teremos que efeturar zoom nos baseando em potências de 2.
 \end{itemize}
 
-\subsection{K-times Zooming}
+\subsection{K-times Zooming \textcolor{red}{DÚVIDA}}
 Esse algoritmo sana problemas dos que foram discutidos anteriormente. $K$ significa o fator de zoom.
 Para explicar esse algoritmo, usaremos um exemplo. Tome a seguinte matriz como representação de uma imagem.
 \begin{table}[!htbp]
@@ -965,7 +966,7 @@ constante $c$. Observe que somamos $1$, para não termos problemas em relação 
 	\endminipage
 \end{figure}
 
-\subsubsection{Transformação Gamma - Power Law - Exponencial}
+\subsubsection{Transformação Gamma - Power Law - Exponencial  \textcolor{red}{DÚVIDA}}
 Nesse caso, também há a transformações de exponenciação e de radiciação. Essa transformação é representada a partir da fórmula:
 \\
 \large{\textcolor{red}{AQUI A TRANSFORMAÇÃO GAMMA É \\ $g(f(x,y)) = c \cdot f(x,y)^{\gamma}$ OU $g(f(x,y)) = c \cdot f(x,y)^{\dfrac{1}{\gamma}}$ ???}}
@@ -1548,7 +1549,7 @@ Observe os resultados:
 	  	\caption{Detecção de bordas internas}
 	\endminipage
 \end{figure}
-\section{Análise do Frequência de Domínio - Frequency Domain Analysis}
+\section{Análise do Frequência de Domínio - Frequency Domain Analysis \textcolor{red}{DÚVIDA}}
 Até agora, analisamos os sinais obtidos em respeito do tempo ou do espaço. Ou seja, geralmente, o tempo ou a posição são as variáveis independentes. 
 Nesse caso, a frequência se torna o domínio da função. Agora lidaremos com a medida de mudança de valores dos pixels. Nesse sentido, 
 o processo de transformação na imagem segue os seguintes passos:
@@ -1561,8 +1562,8 @@ o processo de transformação na imagem segue os seguintes passos:
 \end{itemize}
 
 \textcolor{red}{\large{DIFÍCIL NÃO ENTENDI AS APLICAÇÕES E ACHEI MAL EXPLICADO}
-\section{Series e Transformadas de Fourier}
-\section{Series de Fourier}
+\section{Series e Transformadas de Fourier \textcolor{red}{DÚVIDA}}
+\section{Series de Fourier \textcolor{red}{DÚVIDA}}
 A ideia das series de Fourier é simplesmente que um sinal pode ser decomposto como uma soma infinita de senos e cossenos multiplicados por constantes.
 Assim, ao tratarmos sobre Transformadas de Fourier desejamos decompôr o sinal (imagem) em senos e cossenos, e a saída dessa transformada é a representação 
 da imagem cujo domínio são as frequências. Faremos uma breve explicação sobre transformadas de Fourier discretas (DFT) --- a aplicação em imagens digitais, 
@@ -1579,7 +1580,7 @@ A transformada inversa de Fourier, que converte a imagem à sua forma original �
 \end{center}
 }
 \textcolor{red}{\large{ACHEI MAL EXPLICADO}
-\section{Teorema da Convulução}
+\section{Teorema da Convulução \textcolor{red}{DÚVIDA}}
 O teorema da convulução serve para relacionar uma imagem à sua representação no domínio das frequências. Observe a representação gráfica dessas duas 
 interpretações de uma imagem:}
 \begin{figure}[!htb]
@@ -1606,7 +1607,7 @@ O Teorema da Convolução pode ser representado como:
 Ou seja, realizar convolução tendo o espaço como domínio é equivalente à filtrar tendo as frequências como domínio, e vice-versa.
 }
 \textcolor{red}{
-\section{Filtros Passa Alta e Filtros Passa Baixa em Imagens}}
+\section{Filtros Passa Alta e Filtros Passa Baixa em Imagens \textcolor{red}{DÚVIDA}} }
 
 
 \section{Introdução aos Espaços de Cor}
@@ -1654,7 +1655,7 @@ Sobre YUV, podemos dizer que é utilizado nos seguintes padrões de cor:
 Já em relação ao YCbCr, é interessante ressaltar que é utilizado, principalmente, na compressão de JPEG e MPEG.
 
 \textcolor{red}{
-\section{Introdução à Compressão de JPEG}}
+\section{Introdução à Compressão de JPEG \textcolor{red}{DÚVIDA}}}
 
 \section{Reconhecimento Ótico de Caracteres - OCR}
 OCR consiste na conversão de textos (manuscritos, escaneados, fotografados) para textos compreensíveis para o computador. OCR revolucionou os mais 

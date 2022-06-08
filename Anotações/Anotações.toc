@@ -1,86 +1,86 @@
 \babel@toc {portuges}{}
-\contentsline {section}{\numberline {1}Processamento de Imagens Digitais}{1}{}%
-\contentsline {subsection}{\numberline {1.1}Introdução}{1}{}%
-\contentsline {subsection}{\numberline {1.2}Introdução à Sinais e Sistemas}{2}{}%
-\contentsline {subsubsection}{\numberline {1.2.1}Sinais}{2}{}%
-\contentsline {subsubsection}{\numberline {1.2.2}Sistemas}{2}{}%
-\contentsline {section}{\numberline {2}Aplicações do Processamento de Imagens Digitais}{2}{}%
-\contentsline {section}{\numberline {3}Dimensões das Imagens}{3}{}%
-\contentsline {section}{\numberline {4}Formação de Imagens em Câmeras}{3}{}%
-\contentsline {subsection}{\numberline {4.1}Formação de Imagens em Câmeras Analógicas}{3}{}%
-\contentsline {subsection}{\numberline {4.2}Formação de Imagens em Câmeras Digitais}{3}{}%
-\contentsline {section}{\numberline {5}Mecanismos das Câmeras}{4}{}%
-\contentsline {subsection}{\numberline {5.1}Aperture - Abertura}{4}{}%
-\contentsline {subsection}{\numberline {5.2}Shutter - Obturador}{4}{}%
-\contentsline {subsection}{\numberline {5.3}ISO}{4}{}%
-\contentsline {subsection}{\numberline {5.4}Conceito de Pixel}{5}{}%
-\contentsline {subsubsection}{\numberline {5.4.1}Cálculo do número total de pixels}{5}{}%
-\contentsline {subsubsection}{\numberline {5.4.2}Valores de pixels}{5}{}%
-\contentsline {section}{\numberline {6}Transformação de Perspectiva}{5}{}%
-\contentsline {subsection}{\numberline {6.1}Referencial - Frame of Reference}{5}{}%
-\contentsline {section}{\numberline {7}Conceito de bits por pixel}{6}{}%
-\contentsline {subsection}{\numberline {7.1}Cálculo do tamanho (em memória) de uma imagem}{6}{}%
-\contentsline {section}{\numberline {8}Tipos de imagens}{7}{}%
-\contentsline {subsection}{\numberline {8.1}Imagem binária}{7}{}%
-\contentsline {subsection}{\numberline {8.2}Formato 8 bits de cor}{7}{}%
-\contentsline {subsection}{\numberline {8.3}Formato 16 bits de cor}{7}{}%
-\contentsline {subsection}{\numberline {8.4}Formato 24 bits de cor}{8}{}%
-\contentsline {section}{\numberline {9}Códigos de cores}{8}{}%
-\contentsline {subsection}{\numberline {9.1}Modelo CMYK}{9}{}%
-\contentsline {subsection}{\numberline {9.2}Conversão RGB para Hexadecimal}{9}{}%
-\contentsline {subsection}{\numberline {9.3}Conversão Hexadecimal para RGB}{10}{}%
-\contentsline {section}{\numberline {10}Conversão de RGB para Grayscale}{10}{}%
-\contentsline {section}{\numberline {11}Amostragem - Sampling}{11}{}%
-\contentsline {subsection}{\numberline {11.1}Diferenças entre Zoom Analógico e Digital}{11}{}%
-\contentsline {section}{\numberline {12}Resolução de pixels}{11}{}%
-\contentsline {subsection}{\numberline {12.1}Proporção da Tela}{12}{}%
-\contentsline {section}{\numberline {13}Mais sobre Zoom}{12}{}%
-\contentsline {subsection}{\numberline {13.1}Nearest Neighbor - Pixel Replication}{12}{}%
-\contentsline {subsection}{\numberline {13.2}Zero-Order Hold - Bloqueio de Ordem Zero}{13}{}%
-\contentsline {subsection}{\numberline {13.3}K-times Zooming}{14}{}%
-\contentsline {section}{\numberline {14}Resolução Espacial - Spatial Resolution}{16}{}%
-\contentsline {subsection}{\numberline {14.1}Pixels por Polegada}{16}{}%
-\contentsline {subsection}{\numberline {14.2}Pontos por Polegada}{17}{}%
-\contentsline {section}{\numberline {15}Resolução Grayscale}{17}{}%
-\contentsline {section}{\numberline {16}Conceito de Quantização}{17}{}%
-\contentsline {section}{\numberline {17}Curvas de Preferência ISO - ISO Preference curves}{18}{}%
-\contentsline {subsection}{\numberline {17.1}Curvas de Isopreferência}{19}{}%
-\contentsline {section}{\numberline {18}Conceito de Dithering \leavevmode {\color {red}ACHEI ESSA SEÇÃO CONFUSA}}{19}{}%
-\contentsline {section}{\numberline {19}Introdução a Histogramas}{19}{}%
-\contentsline {subsection}{\numberline {19.1}Histograma de uma Imagem}{19}{}%
-\contentsline {subsection}{\numberline {19.2}Aplicações dos Histogramas}{19}{}%
-\contentsline {section}{\numberline {20}Brilho e Contraste}{20}{}%
-\contentsline {subsection}{\numberline {20.1}Contraste}{20}{}%
-\contentsline {section}{\numberline {21}Transformação em imagens}{21}{}%
-\contentsline {section}{\numberline {22}Deslizamento de Histogramas - Histogram Sliding}{21}{}%
-\contentsline {section}{\numberline {23}Alongamento de Histogramas - Histogram Stretching}{22}{}%
-\contentsline {section}{\numberline {24}Probabilidade para Transformações de Histogramas}{24}{}%
-\contentsline {section}{\numberline {25}Equalização de Histogramas - Histogram Equalization}{27}{}%
-\contentsline {section}{\numberline {26}Transformações de Níveis de Cinza}{29}{}%
-\contentsline {subsection}{\numberline {26.1}Aprimoramento de imagens}{29}{}%
-\contentsline {subsection}{\numberline {26.2}Transformação de Nível de Cinza}{29}{}%
-\contentsline {subsubsection}{\numberline {26.2.1}Transformação Linear}{29}{}%
-\contentsline {subsubsection}{\numberline {26.2.2}Transformação Logarítimica}{30}{}%
-\contentsline {subsubsection}{\numberline {26.2.3}Transformação Gamma - Power Law - Exponencial}{31}{}%
-\contentsline {section}{\numberline {27}Conceito de Convolução}{32}{}%
-\contentsline {subsection}{\numberline {27.1}Máscara}{32}{}%
-\contentsline {subsubsection}{\numberline {27.1.1}Como efetuar convolução utilizando a máscara}{32}{}%
-\contentsline {subsubsection}{\numberline {27.1.2}Vantagens da Convolução}{34}{}%
-\contentsline {section}{\numberline {28}Conceito de Máscara}{34}{}%
-\contentsline {section}{\numberline {29}Conceito de Blurring}{34}{}%
-\contentsline {section}{\numberline {30}Conceito de bordas - Edges}{36}{}%
-\contentsline {subsection}{\numberline {30.1}Prewitt Operator}{37}{}%
-\contentsline {subsection}{\numberline {30.2}Sobel Operator}{39}{}%
-\contentsline {subsection}{\numberline {30.3}Robinson Compass Masks}{40}{}%
-\contentsline {subsection}{\numberline {30.4}Krisch Compass Masks}{41}{}%
-\contentsline {subsection}{\numberline {30.5}Laplacian Operator}{42}{}%
-\contentsline {section}{\numberline {31}Análise do Frequência de Domínio - Frequency Domain Analysis}{43}{}%
-\contentsline {section}{\numberline {32}Series e Transformadas de Fourier}{44}{}%
-\contentsline {section}{\numberline {33}Series de Fourier}{44}{}%
-\contentsline {section}{\numberline {34}Teorema da Convulução}{45}{}%
-\contentsline {section}{\numberline {35}Filtros Passa Alta e Filtros Passa Baixa em Imagens}{45}{}%
-\contentsline {section}{\numberline {36}Introdução aos Espaços de Cor}{45}{}%
-\contentsline {section}{\numberline {37}Introdução à Compressão de JPEG}{47}{}%
-\contentsline {section}{\numberline {38}Reconhecimento Ótico de Caracteres - OCR}{47}{}%
-\contentsline {section}{\numberline {39}Visão Computacional}{47}{}%
-\contentsline {section}{\numberline {40}Computação Gráfica}{48}{}%
+\contentsline {section}{\numberline {1}Processamento de Imagens Digitais}{1}{section.1}%
+\contentsline {subsection}{\numberline {1.1}Introdução}{1}{subsection.1.1}%
+\contentsline {subsection}{\numberline {1.2}Introdução à Sinais e Sistemas}{2}{subsection.1.2}%
+\contentsline {subsubsection}{\numberline {1.2.1}Sinais}{2}{subsubsection.1.2.1}%
+\contentsline {subsubsection}{\numberline {1.2.2}Sistemas}{2}{subsubsection.1.2.2}%
+\contentsline {section}{\numberline {2}Aplicações do Processamento de Imagens Digitais}{2}{section.2}%
+\contentsline {section}{\numberline {3}Dimensões das Imagens}{3}{section.3}%
+\contentsline {section}{\numberline {4}Formação de Imagens em Câmeras}{3}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Formação de Imagens em Câmeras Analógicas}{3}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Formação de Imagens em Câmeras Digitais}{3}{subsection.4.2}%
+\contentsline {section}{\numberline {5}Mecanismos das Câmeras}{4}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Aperture - Abertura}{4}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}Shutter - Obturador}{4}{subsection.5.2}%
+\contentsline {subsection}{\numberline {5.3}ISO}{4}{subsection.5.3}%
+\contentsline {subsection}{\numberline {5.4}Conceito de Pixel}{5}{subsection.5.4}%
+\contentsline {subsubsection}{\numberline {5.4.1}Cálculo do número total de pixels}{5}{subsubsection.5.4.1}%
+\contentsline {subsubsection}{\numberline {5.4.2}Valores de pixels}{5}{subsubsection.5.4.2}%
+\contentsline {section}{\numberline {6}Transformação de Perspectiva}{5}{section.6}%
+\contentsline {subsection}{\numberline {6.1}Referencial - Frame of Reference}{5}{subsection.6.1}%
+\contentsline {section}{\numberline {7}Conceito de bits por pixel}{6}{section.7}%
+\contentsline {subsection}{\numberline {7.1}Cálculo do tamanho (em memória) de uma imagem}{6}{subsection.7.1}%
+\contentsline {section}{\numberline {8}Tipos de imagens}{7}{section.8}%
+\contentsline {subsection}{\numberline {8.1}Imagem binária}{7}{subsection.8.1}%
+\contentsline {subsection}{\numberline {8.2}Formato 8 bits de cor}{7}{subsection.8.2}%
+\contentsline {subsection}{\numberline {8.3}Formato 16 bits de cor}{7}{subsection.8.3}%
+\contentsline {subsection}{\numberline {8.4}Formato 24 bits de cor}{8}{subsection.8.4}%
+\contentsline {section}{\numberline {9}Códigos de cores}{8}{section.9}%
+\contentsline {subsection}{\numberline {9.1}Modelo CMYK}{9}{subsection.9.1}%
+\contentsline {subsection}{\numberline {9.2}Conversão RGB para Hexadecimal}{9}{subsection.9.2}%
+\contentsline {subsection}{\numberline {9.3}Conversão Hexadecimal para RGB}{10}{subsection.9.3}%
+\contentsline {section}{\numberline {10}Conversão de RGB para Grayscale}{10}{section.10}%
+\contentsline {section}{\numberline {11}Amostragem - Sampling}{11}{section.11}%
+\contentsline {subsection}{\numberline {11.1}Diferenças entre Zoom Analógico e Digital}{11}{subsection.11.1}%
+\contentsline {section}{\numberline {12}Resolução de pixels}{11}{section.12}%
+\contentsline {subsection}{\numberline {12.1}Proporção da Tela}{12}{subsection.12.1}%
+\contentsline {section}{\numberline {13}Mais sobre Zoom}{12}{section.13}%
+\contentsline {subsection}{\numberline {13.1}Nearest Neighbor - Pixel Replication}{12}{subsection.13.1}%
+\contentsline {subsection}{\numberline {13.2}Zero-Order Hold - Bloqueio de Ordem Zero}{13}{subsection.13.2}%
+\contentsline {subsection}{\numberline {13.3}K-times Zooming \leavevmode {\color {red}DÚVIDA}}{14}{subsection.13.3}%
+\contentsline {section}{\numberline {14}Resolução Espacial - Spatial Resolution}{16}{section.14}%
+\contentsline {subsection}{\numberline {14.1}Pixels por Polegada}{16}{subsection.14.1}%
+\contentsline {subsection}{\numberline {14.2}Pontos por Polegada}{17}{subsection.14.2}%
+\contentsline {section}{\numberline {15}Resolução Grayscale}{17}{section.15}%
+\contentsline {section}{\numberline {16}Conceito de Quantização}{17}{section.16}%
+\contentsline {section}{\numberline {17}Curvas de Preferência ISO - ISO Preference curves}{18}{section.17}%
+\contentsline {subsection}{\numberline {17.1}Curvas de Isopreferência}{19}{subsection.17.1}%
+\contentsline {section}{\numberline {18}Conceito de Dithering \leavevmode {\color {red}ACHEI ESSA SEÇÃO CONFUSA}}{19}{section.18}%
+\contentsline {section}{\numberline {19}Introdução a Histogramas}{19}{section.19}%
+\contentsline {subsection}{\numberline {19.1}Histograma de uma Imagem}{19}{subsection.19.1}%
+\contentsline {subsection}{\numberline {19.2}Aplicações dos Histogramas}{19}{subsection.19.2}%
+\contentsline {section}{\numberline {20}Brilho e Contraste}{20}{section.20}%
+\contentsline {subsection}{\numberline {20.1}Contraste}{20}{subsection.20.1}%
+\contentsline {section}{\numberline {21}Transformação em imagens}{21}{section.21}%
+\contentsline {section}{\numberline {22}Deslizamento de Histogramas - Histogram Sliding}{21}{section.22}%
+\contentsline {section}{\numberline {23}Alongamento de Histogramas - Histogram Stretching}{22}{section.23}%
+\contentsline {section}{\numberline {24}Probabilidade para Transformações de Histogramas}{24}{section.24}%
+\contentsline {section}{\numberline {25}Equalização de Histogramas - Histogram Equalization}{27}{section.25}%
+\contentsline {section}{\numberline {26}Transformações de Níveis de Cinza}{29}{section.26}%
+\contentsline {subsection}{\numberline {26.1}Aprimoramento de imagens}{29}{subsection.26.1}%
+\contentsline {subsection}{\numberline {26.2}Transformação de Nível de Cinza}{29}{subsection.26.2}%
+\contentsline {subsubsection}{\numberline {26.2.1}Transformação Linear}{29}{subsubsection.26.2.1}%
+\contentsline {subsubsection}{\numberline {26.2.2}Transformação Logarítimica}{30}{subsubsection.26.2.2}%
+\contentsline {subsubsection}{\numberline {26.2.3}Transformação Gamma - Power Law - Exponencial \leavevmode {\color {red}DÚVIDA}}{31}{subsubsection.26.2.3}%
+\contentsline {section}{\numberline {27}Conceito de Convolução}{32}{section.27}%
+\contentsline {subsection}{\numberline {27.1}Máscara}{32}{subsection.27.1}%
+\contentsline {subsubsection}{\numberline {27.1.1}Como efetuar convolução utilizando a máscara}{32}{subsubsection.27.1.1}%
+\contentsline {subsubsection}{\numberline {27.1.2}Vantagens da Convolução}{34}{subsubsection.27.1.2}%
+\contentsline {section}{\numberline {28}Conceito de Máscara}{34}{section.28}%
+\contentsline {section}{\numberline {29}Conceito de Blurring}{34}{section.29}%
+\contentsline {section}{\numberline {30}Conceito de bordas - Edges}{36}{section.30}%
+\contentsline {subsection}{\numberline {30.1}Prewitt Operator}{37}{subsection.30.1}%
+\contentsline {subsection}{\numberline {30.2}Sobel Operator}{39}{subsection.30.2}%
+\contentsline {subsection}{\numberline {30.3}Robinson Compass Masks}{40}{subsection.30.3}%
+\contentsline {subsection}{\numberline {30.4}Krisch Compass Masks}{41}{subsection.30.4}%
+\contentsline {subsection}{\numberline {30.5}Laplacian Operator}{42}{subsection.30.5}%
+\contentsline {section}{\numberline {31}Análise do Frequência de Domínio - Frequency Domain Analysis \leavevmode {\color {red}DÚVIDA}}{43}{section.31}%
+\contentsline {section}{\numberline {32}Series e Transformadas de Fourier \leavevmode {\color {red}DÚVIDA}}{44}{section.32}%
+\contentsline {section}{\numberline {33}Series de Fourier \leavevmode {\color {red}DÚVIDA}}{44}{section.33}%
+\contentsline {section}{\numberline {34}Teorema da Convulução \leavevmode {\color {red}DÚVIDA}}{45}{section.34}%
+\contentsline {section}{\numberline {35}Filtros Passa Alta e Filtros Passa Baixa em Imagens \leavevmode {\color {red}DÚVIDA}}{45}{section.35}%
+\contentsline {section}{\numberline {36}Introdução aos Espaços de Cor}{45}{section.36}%
+\contentsline {section}{\numberline {37}Introdução à Compressão de JPEG \leavevmode {\color {red}DÚVIDA}}{47}{section.37}%
+\contentsline {section}{\numberline {38}Reconhecimento Ótico de Caracteres - OCR}{47}{section.38}%
+\contentsline {section}{\numberline {39}Visão Computacional}{47}{section.39}%
+\contentsline {section}{\numberline {40}Computação Gráfica}{48}{section.40}%

@@ -1,0 +1,85 @@
+\BOOKMARK [1][-]{section.1}{Processamento de Imagens Digitais}{}% 1
+\BOOKMARK [2][-]{subsection.1.1}{Introdu\347\343o}{section.1}% 2
+\BOOKMARK [2][-]{subsection.1.2}{Introdu\347\343o \340 Sinais e Sistemas}{section.1}% 3
+\BOOKMARK [3][-]{subsubsection.1.2.1}{Sinais}{subsection.1.2}% 4
+\BOOKMARK [3][-]{subsubsection.1.2.2}{Sistemas}{subsection.1.2}% 5
+\BOOKMARK [1][-]{section.2}{Aplica\347\365es do Processamento de Imagens Digitais}{}% 6
+\BOOKMARK [1][-]{section.3}{Dimens\365es das Imagens}{}% 7
+\BOOKMARK [1][-]{section.4}{Forma\347\343o de Imagens em C\342meras}{}% 8
+\BOOKMARK [2][-]{subsection.4.1}{Forma\347\343o de Imagens em C\342meras Anal\363gicas}{section.4}% 9
+\BOOKMARK [2][-]{subsection.4.2}{Forma\347\343o de Imagens em C\342meras Digitais}{section.4}% 10
+\BOOKMARK [1][-]{section.5}{Mecanismos das C\342meras}{}% 11
+\BOOKMARK [2][-]{subsection.5.1}{Aperture - Abertura}{section.5}% 12
+\BOOKMARK [2][-]{subsection.5.2}{Shutter - Obturador}{section.5}% 13
+\BOOKMARK [2][-]{subsection.5.3}{ISO}{section.5}% 14
+\BOOKMARK [2][-]{subsection.5.4}{Conceito de Pixel}{section.5}% 15
+\BOOKMARK [3][-]{subsubsection.5.4.1}{C\341lculo do n\372mero total de pixels}{subsection.5.4}% 16
+\BOOKMARK [3][-]{subsubsection.5.4.2}{Valores de pixels}{subsection.5.4}% 17
+\BOOKMARK [1][-]{section.6}{Transforma\347\343o de Perspectiva}{}% 18
+\BOOKMARK [2][-]{subsection.6.1}{Referencial - Frame of Reference}{section.6}% 19
+\BOOKMARK [1][-]{section.7}{Conceito de bits por pixel}{}% 20
+\BOOKMARK [2][-]{subsection.7.1}{C\341lculo do tamanho \(em mem\363ria\) de uma imagem}{section.7}% 21
+\BOOKMARK [1][-]{section.8}{Tipos de imagens}{}% 22
+\BOOKMARK [2][-]{subsection.8.1}{Imagem bin\341ria}{section.8}% 23
+\BOOKMARK [2][-]{subsection.8.2}{Formato 8 bits de cor}{section.8}% 24
+\BOOKMARK [2][-]{subsection.8.3}{Formato 16 bits de cor}{section.8}% 25
+\BOOKMARK [2][-]{subsection.8.4}{Formato 24 bits de cor}{section.8}% 26
+\BOOKMARK [1][-]{section.9}{C\363digos de cores}{}% 27
+\BOOKMARK [2][-]{subsection.9.1}{Modelo CMYK}{section.9}% 28
+\BOOKMARK [2][-]{subsection.9.2}{Convers\343o RGB para Hexadecimal}{section.9}% 29
+\BOOKMARK [2][-]{subsection.9.3}{Convers\343o Hexadecimal para RGB}{section.9}% 30
+\BOOKMARK [1][-]{section.10}{Convers\343o de RGB para Grayscale}{}% 31
+\BOOKMARK [1][-]{section.11}{Amostragem - Sampling}{}% 32
+\BOOKMARK [2][-]{subsection.11.1}{Diferen\347as entre Zoom Anal\363gico e Digital}{section.11}% 33
+\BOOKMARK [1][-]{section.12}{Resolu\347\343o de pixels}{}% 34
+\BOOKMARK [2][-]{subsection.12.1}{Propor\347\343o da Tela}{section.12}% 35
+\BOOKMARK [1][-]{section.13}{Mais sobre Zoom}{}% 36
+\BOOKMARK [2][-]{subsection.13.1}{Nearest Neighbor - Pixel Replication}{section.13}% 37
+\BOOKMARK [2][-]{subsection.13.2}{Zero-Order Hold - Bloqueio de Ordem Zero}{section.13}% 38
+\BOOKMARK [2][-]{subsection.13.3}{K-times Zooming D\332VIDA}{section.13}% 39
+\BOOKMARK [1][-]{section.14}{Resolu\347\343o Espacial - Spatial Resolution}{}% 40
+\BOOKMARK [2][-]{subsection.14.1}{Pixels por Polegada}{section.14}% 41
+\BOOKMARK [2][-]{subsection.14.2}{Pontos por Polegada}{section.14}% 42
+\BOOKMARK [1][-]{section.15}{Resolu\347\343o Grayscale}{}% 43
+\BOOKMARK [1][-]{section.16}{Conceito de Quantiza\347\343o}{}% 44
+\BOOKMARK [1][-]{section.17}{Curvas de Prefer\352ncia ISO - ISO Preference curves}{}% 45
+\BOOKMARK [2][-]{subsection.17.1}{Curvas de Isoprefer\352ncia}{section.17}% 46
+\BOOKMARK [1][-]{section.18}{Conceito de Dithering ACHEI ESSA SE\307\303O CONFUSA}{}% 47
+\BOOKMARK [1][-]{section.19}{Introdu\347\343o a Histogramas}{}% 48
+\BOOKMARK [2][-]{subsection.19.1}{Histograma de uma Imagem}{section.19}% 49
+\BOOKMARK [2][-]{subsection.19.2}{Aplica\347\365es dos Histogramas}{section.19}% 50
+\BOOKMARK [1][-]{section.20}{Brilho e Contraste}{}% 51
+\BOOKMARK [2][-]{subsection.20.1}{Contraste}{section.20}% 52
+\BOOKMARK [1][-]{section.21}{Transforma\347\343o em imagens}{}% 53
+\BOOKMARK [1][-]{section.22}{Deslizamento de Histogramas - Histogram Sliding}{}% 54
+\BOOKMARK [1][-]{section.23}{Alongamento de Histogramas - Histogram Stretching}{}% 55
+\BOOKMARK [1][-]{section.24}{Probabilidade para Transforma\347\365es de Histogramas}{}% 56
+\BOOKMARK [1][-]{section.25}{Equaliza\347\343o de Histogramas - Histogram Equalization}{}% 57
+\BOOKMARK [1][-]{section.26}{Transforma\347\365es de N\355veis de Cinza}{}% 58
+\BOOKMARK [2][-]{subsection.26.1}{Aprimoramento de imagens}{section.26}% 59
+\BOOKMARK [2][-]{subsection.26.2}{Transforma\347\343o de N\355vel de Cinza}{section.26}% 60
+\BOOKMARK [3][-]{subsubsection.26.2.1}{Transforma\347\343o Linear}{subsection.26.2}% 61
+\BOOKMARK [3][-]{subsubsection.26.2.2}{Transforma\347\343o Logar\355timica}{subsection.26.2}% 62
+\BOOKMARK [3][-]{subsubsection.26.2.3}{Transforma\347\343o Gamma - Power Law - Exponencial D\332VIDA}{subsection.26.2}% 63
+\BOOKMARK [1][-]{section.27}{Conceito de Convolu\347\343o}{}% 64
+\BOOKMARK [2][-]{subsection.27.1}{M\341scara}{section.27}% 65
+\BOOKMARK [3][-]{subsubsection.27.1.1}{Como efetuar convolu\347\343o utilizando a m\341scara}{subsection.27.1}% 66
+\BOOKMARK [3][-]{subsubsection.27.1.2}{Vantagens da Convolu\347\343o}{subsection.27.1}% 67
+\BOOKMARK [1][-]{section.28}{Conceito de M\341scara}{}% 68
+\BOOKMARK [1][-]{section.29}{Conceito de Blurring}{}% 69
+\BOOKMARK [1][-]{section.30}{Conceito de bordas - Edges}{}% 70
+\BOOKMARK [2][-]{subsection.30.1}{Prewitt Operator}{section.30}% 71
+\BOOKMARK [2][-]{subsection.30.2}{Sobel Operator}{section.30}% 72
+\BOOKMARK [2][-]{subsection.30.3}{Robinson Compass Masks}{section.30}% 73
+\BOOKMARK [2][-]{subsection.30.4}{Krisch Compass Masks}{section.30}% 74
+\BOOKMARK [2][-]{subsection.30.5}{Laplacian Operator}{section.30}% 75
+\BOOKMARK [1][-]{section.31}{An\341lise do Frequ\352ncia de Dom\355nio - Frequency Domain Analysis D\332VIDA}{}% 76
+\BOOKMARK [1][-]{section.32}{Series e Transformadas de Fourier D\332VIDA}{}% 77
+\BOOKMARK [1][-]{section.33}{Series de Fourier D\332VIDA}{}% 78
+\BOOKMARK [1][-]{section.34}{Teorema da Convulu\347\343o D\332VIDA}{}% 79
+\BOOKMARK [1][-]{section.35}{Filtros Passa Alta e Filtros Passa Baixa em Imagens D\332VIDA}{}% 80
+\BOOKMARK [1][-]{section.36}{Introdu\347\343o aos Espa\347os de Cor}{}% 81
+\BOOKMARK [1][-]{section.37}{Introdu\347\343o \340 Compress\343o de JPEG D\332VIDA}{}% 82
+\BOOKMARK [1][-]{section.38}{Reconhecimento \323tico de Caracteres - OCR}{}% 83
+\BOOKMARK [1][-]{section.39}{Vis\343o Computacional}{}% 84
+\BOOKMARK [1][-]{section.40}{Computa\347\343o Gr\341fica}{}% 85
