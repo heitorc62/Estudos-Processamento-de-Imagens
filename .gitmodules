@@ -1,0 +1,3 @@
+[submodule "Plants-ConvNets-ViT"]
+	path = Plants-ConvNets-ViT
+	url = https://github.com/heitorc62/Plants-ConvNets-ViT.git
