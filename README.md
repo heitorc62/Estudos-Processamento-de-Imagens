@@ -1,2 +1,2 @@
-# Estudos-Processamento-de-Imagens
-Neste repositório, pretendo registrar meu progresso em um estudo inicial sobre processamento de imagens digitais.
+# undergraduate-research-project
+Neste repositório, pretendo registrar meus estudos de Iniciação Científica no campo de Visão Computacional e Machine Learning. 
